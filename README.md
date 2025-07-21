@@ -1,1 +1,1 @@
-# azure-open-ai
+# ai-suggestion-service
