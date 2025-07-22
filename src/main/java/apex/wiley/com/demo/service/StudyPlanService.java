@@ -6,6 +6,9 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.Map;
 import java.util.Optional;
 import java.util.UUID;
@@ -31,18 +34,47 @@ public class StudyPlanService {
                 throw new RuntimeException("Missing required fields: courseKey, userKey, or courseOutline");
             }
             
+            // Extract optional date fields
+            LocalDate courseStartDate = parseDate((String) requestPayload.get("courseStartDate"));
+            LocalDate courseEndDate = parseDate((String) requestPayload.get("courseEndDate"));
+            
             // Convert the course outline to JSON string
             String courseOutlineJson = objectMapper.writeValueAsString(courseOutline);
             
             StudyPlan studyPlan = new StudyPlan();
             studyPlan.setCourseKey(courseKey);
             studyPlan.setUserKey(userKey);
-            // studyPlan.setThreadId(UUID.randomUUID().toString()); // Generate new threadId
+            studyPlan.setThreadId(UUID.randomUUID().toString()); // Generate new threadId
+            studyPlan.setCourseStartDate(courseStartDate);
+            studyPlan.setCourseEndDate(courseEndDate);
             studyPlan.setCourseOutline(courseOutlineJson);
             
             return studyPlanRepository.save(studyPlan);
         } catch (JsonProcessingException e) {
             throw new RuntimeException("Failed to process course outline JSON", e);
+        }
+    }
+
+    /**
+     * Parses a date string into LocalDate, returns null if invalid or null
+     */
+    private LocalDate parseDate(String dateString) {
+        if (dateString == null || dateString.trim().isEmpty()) {
+            return null;
+        }
+        
+        try {
+            // Try parsing in ISO format first (yyyy-MM-dd)
+            return LocalDate.parse(dateString);
+        } catch (DateTimeParseException e) {
+            try {
+                // Try parsing in other common formats
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+                return LocalDate.parse(dateString, formatter);
+            } catch (DateTimeParseException e2) {
+                // If both fail, return null
+                return null;
+            }
         }
     }
 

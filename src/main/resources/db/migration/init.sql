@@ -10,6 +10,8 @@ CREATE TABLE IF NOT EXISTS study_plan (
     course_key VARCHAR(255) NOT NULL,
     user_key VARCHAR(255) NOT NULL,
     thread_id VARCHAR(255) NOT NULL,
+    course_start_date DATE,
+    course_end_date DATE,
     study_plan JSON,
     course_outline JSON,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
