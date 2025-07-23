@@ -42,13 +42,13 @@ public class StudyPlanController {
             @PathVariable String id,
             @PathVariable int weekNumber,
             @RequestBody Map<String, Object> requestBody) {
-        
+
         try {
             String status = (String) requestBody.get("status");
             if (status == null) {
                 return ResponseEntity.badRequest().build();
             }
-            
+
             Optional<StudyPlan> updatedStudyPlan = studyPlanService.updateWeekStatus(id, weekNumber, status.toUpperCase());
             return updatedStudyPlan.map(ResponseEntity::ok)
                                   .orElse(ResponseEntity.notFound().build());
