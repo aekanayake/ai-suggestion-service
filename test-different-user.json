@@ -1,0 +1,22 @@
+{
+  "courseKey": "d140fb2e-67bf-4f2f-8cff-67362aae4c28",
+  "userKey": "different-user-123",
+  "courseStartDate": "2024-01-15",
+  "courseEndDate": "2024-05-15",
+  "courseOutline": {
+    "contentMeta": {
+      "shortTitle": "Black, 9",
+      "title": "STEADY_Master_Course_Package_Format_Black, Business Statistics, 9e",
+      "author": "Black",
+      "edition": "9",
+      "discipline": "Business & Decision Science"
+    },
+    "itemList": [
+      {
+        "id": "6768cf42-193f-422c-ac3a-274c6c69018a",
+        "type": "module",
+        "title": "Welcome to your Wiley Course"
+      }
+    ]
+  }
+}

@@ -21,7 +21,8 @@ public class StudyPlanService {
     private final ObjectMapper objectMapper;
 
     /**
-     * Creates a new study plan from request payload and saves to database
+     * Creates a new study plan from request payload and saves to database.
+     * If a study plan with the same userKey and courseKey already exists, returns the existing one.
      */
     public StudyPlan createStudyPlan(Map<String, Object> requestPayload) {
         try {
@@ -32,6 +33,12 @@ public class StudyPlanService {
             
             if (courseKey == null || userKey == null || courseOutline == null) {
                 throw new RuntimeException("Missing required fields: courseKey, userKey, or courseOutline");
+            }
+            
+            // Check if study plan already exists for this user and course
+            Optional<StudyPlan> existingStudyPlan = studyPlanRepository.findByCourseKeyAndUserKey(courseKey, userKey);
+            if (existingStudyPlan.isPresent()) {
+                return existingStudyPlan.get();
             }
             
             // Extract optional date fields
