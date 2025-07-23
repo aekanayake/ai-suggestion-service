@@ -1,0 +1,209 @@
+{
+   "studyPlan":[
+      {
+         "weekNumber":1,
+         "startDate":"2025-07-01",
+         "endDate":"2025-07-07",
+         "status":"NOT_STARTED",
+         "topic":"Welcome to the Course!",
+         "motivationalMessage":"Let's kick off the journey to mastering Business Statistics!",
+         "tasks":[
+            {
+               "type":"Read",
+               "title":"What's Inside",
+               "url":"https://education-qa.wiley.com/content/shared/ebook/articles/welcome/v01/whats-inside.html"
+            },
+            {
+               "type":"Read",
+               "title":"Looking for Help and Tips?",
+               "url":"https://education-qa.wiley.com/content/shared/ebook/articles/welcome/v01/looking-for-help-and-tips.html"
+            },
+            {
+               "type":"Submit",
+               "title":"Presentación (Introduction)",
+               "url":"https://lti.education-qa.wiley.com/wpng/api/v1/lti/masker/tools/220/products/cf276977-696c-4f34-9556-0a71dbbfe5bb/items/862"
+            }
+         ]
+      },
+      {
+         "weekNumber":2,
+         "startDate":"2025-07-08",
+         "endDate":"2025-07-14",
+         "status":"NOT_STARTED",
+         "topic":"Introduction to Statistics",
+         "motivationalMessage":"Begin your exploration of statistical concepts with enthusiasm!",
+         "tasks":[
+            {
+               "type":"Read",
+               "title":"1.1 Basic Statistical Concepts",
+               "url":"https://education-qa.wiley.com/content/Black_Business_Statistics_9e/ebook/articles/EPROF18523/sec01_01.html"
+            },
+            {
+               "type":"Submit",
+               "title":"Ch 1: Homework",
+               "url":"https://lti.education-qa.wiley.com/wpng/api/v1/lti/products/cf276977-696c-4f34-9556-0a71dbbfe5bb/assessments/5496e700-1363-49de-88d2-5d3ddd71522f"
+            }
+         ]
+      },
+      {
+         "weekNumber":3,
+         "startDate":"2025-07-15",
+         "endDate":"2025-07-21",
+         "status":"NOT_STARTED",
+         "topic":"Understanding Data",
+         "motivationalMessage":"Dive into data measurement and enhance your analytical skills.",
+         "tasks":[
+            {
+               "type":"Read",
+               "title":"1.2 Data Measurement",
+               "url":"https://education-qa.wiley.com/content/Black_Business_Statistics_9e/ebook/articles/EPROF18523/sec01_02.html"
+            },
+            {
+               "type":"Submit",
+               "title":"1.4 ¿Qué asocias con...? (Pair Activity)",
+               "url":"https://lti.education-qa.wiley.com/wpng/api/v1/lti/masker/tools/220/products/cf276977-696c-4f34-9556-0a71dbbfe5bb/items/862"
+            }
+         ]
+      },
+      {
+         "weekNumber":4,
+         "startDate":"2025-07-22",
+         "endDate":"2025-07-28",
+         "status":"NOT_STARTED",
+         "topic":"Charts and Graphs",
+         "motivationalMessage":"Visualize data effectively for better decision-making!",
+         "tasks":[
+            {
+               "type":"Read",
+               "title":"2.1 Frequency Distributions",
+               "url":"https://education-qa.wiley.com/content/Black_Business_Statistics_9e/ebook/articles/EPROF18523/sec02_01.html"
+            },
+            {
+               "type":"Submit",
+               "title":"Ch 2: Homework",
+               "url":"https://lti.education-qa.wiley.com/wpng/api/v1/lti/products/cf276977-696c-4f34-9556-0a71dbbfe5bb/assessments/77ee77e8-e58d-4c94-883a-132a37491984"
+            }
+         ]
+      },
+      {
+         "weekNumber":5,
+         "startDate":"2025-07-29",
+         "endDate":"2025-08-04",
+         "status":"NOT_STARTED",
+         "topic":"Accounting Systems",
+         "motivationalMessage":"Build a strong foundation in financial processes!",
+         "tasks":[
+            {
+               "type":"Read",
+               "title":"Accrual Accounting",
+               "url":"https://lti.education-qa.wiley.com/wpng/api/v1/lti/masker/tools/355/products/cf276977-696c-4f34-9556-0a71dbbfe5bb/items/1031"
+            },
+            {
+               "type":"Read",
+               "title":"Financial Statements",
+               "url":"https://lti.education-qa.wiley.com/wpng/api/v1/lti/masker/tools/355/products/cf276977-696c-4f34-9556-0a71dbbfe5bb/items/1032"
+            }
+         ]
+      },
+      {
+         "weekNumber":6,
+         "startDate":"2025-08-05",
+         "endDate":"2025-08-11",
+         "status":"NOT_STARTED",
+         "topic":"Data Analytics Introduction",
+         "motivationalMessage":"Unlock the power of big data in decision-making!",
+         "tasks":[
+            {
+               "type":"Read",
+               "title":"Data Analytics Lesson 01: Value of Big Data",
+               "url":"https://education-qa.wiley.com/content/shared/ebook/articles/accounting/data_analytics_decision_making_module/DMM_lesson_01.html"
+            },
+            {
+               "type":"Submit",
+               "title":"Data Analytics Lesson 01: Practice Quiz",
+               "url":"https://lti.education-qa.wiley.com/wpng/api/v1/lti/products/cf276977-696c-4f34-9556-0a71dbbfe5bb/assessments/90c64d53-d78a-43be-91bb-4011956e54cf"
+            }
+         ]
+      },
+      {
+         "weekNumber":7,
+         "startDate":"2025-08-12",
+         "endDate":"2025-08-18",
+         "status":"NOT_STARTED",
+         "topic":"Advanced Analytics",
+         "motivationalMessage":"Overcome challenges with big data and thrive!",
+         "tasks":[
+            {
+               "type":"Read",
+               "title":"Data Analytics Lesson 02: Challenges of Big Data",
+               "url":"https://education-qa.wiley.com/content/shared/ebook/articles/accounting/data_analytics_decision_making_module/DMM_lesson_02.html"
+            },
+            {
+               "type":"Submit",
+               "title":"Data Analytics Lesson 02: Practice Quiz",
+               "url":"https://lti.education-qa.wiley.com/wpng/api/v1/lti/products/cf276977-696c-4f34-9556-0a71dbbfe5bb/assessments/529bac87-ff3f-4a61-8f05-c9152ccce53e"
+            }
+         ]
+      },
+      {
+         "weekNumber":8,
+         "startDate":"2025-08-19",
+         "endDate":"2025-08-25",
+         "status":"NOT_STARTED",
+         "topic":"Data Governance",
+         "motivationalMessage":"Master data governance for impactful analytics!",
+         "tasks":[
+            {
+               "type":"Read",
+               "title":"Data Analytics Lesson 04: Data Governance",
+               "url":"https://education-qa.wiley.com/content/shared/ebook/articles/accounting/data_analytics_decision_making_module/DMM_lesson_04.html"
+            },
+            {
+               "type":"Submit",
+               "title":"Data Analytics Lesson 04: Practice Quiz",
+               "url":"https://lti.education-qa.wiley.com/wpng/api/v1/lti/products/cf276977-696c-4f34-9556-0a71dbbfe5bb/assessments/db274cf6-2a25-4469-8568-45751a824e02"
+            }
+         ]
+      },
+      {
+         "weekNumber":9,
+         "startDate":"2025-08-26",
+         "endDate":"2025-09-01",
+         "status":"NOT_STARTED",
+         "topic":"Decision Optimization",
+         "motivationalMessage":"Hone your skills in creating powerful visualization tools!",
+         "tasks":[
+            {
+               "type":"Read",
+               "title":"Data Analytics Lesson 06: Linear Regression and Optimization Models",
+               "url":"https://education-qa.wiley.com/content/shared/ebook/articles/accounting/data_analytics_decision_making_module/DMM_lesson_06.html"
+            },
+            {
+               "type":"Submit",
+               "title":"Data Analytics Lesson 06: Practice Quiz",
+               "url":"https://lti.education-qa.wiley.com/wpng/api/v1/lti/products/cf276977-696c-4f34-9556-0a71dbbfe5bb/assessments/e57e10a7-eaa4-4bf8-98d5-b2676b6cd3cd"
+            }
+         ]
+      },
+      {
+         "weekNumber":10,
+         "startDate":"2025-09-02",
+         "endDate":"2025-09-08",
+         "status":"NOT_STARTED",
+         "topic":"Visualization Tools",
+         "motivationalMessage":"Let data visualization bring your insights to life!",
+         "tasks":[
+            {
+               "type":"Read",
+               "title":"Data Analytics Lesson 07: Visualization Tools",
+               "url":"https://education-qa.wiley.com/content/shared/ebook/articles/accounting/data_analytics_decision_making_module/DMM_lesson_07.html"
+            },
+            {
+               "type":"Submit",
+               "title":"Data Analytics Lesson 07: Practice Quiz",
+               "url":"https://lti.education-qa.wiley.com/wpng/api/v1/lti/products/cf276977-696c-4f34-9556-0a71dbbfe5bb/assessments/c7445aea-81d8-4bc7-9d3f-3579ec6e4d07"
+            }
+         ]
+      }
+   ]
+}

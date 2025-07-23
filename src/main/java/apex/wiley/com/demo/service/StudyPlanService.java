@@ -38,6 +38,13 @@ public class StudyPlanService {
             LocalDate courseStartDate = parseDate((String) requestPayload.get("courseStartDate"));
             LocalDate courseEndDate = parseDate((String) requestPayload.get("courseEndDate"));
             
+            // Extract optional study plan field
+            Object studyPlanData = requestPayload.get("studyPlan");
+            String studyPlanJson = null;
+            if (studyPlanData != null) {
+                studyPlanJson = objectMapper.writeValueAsString(requestPayload);
+            }
+            
             // Convert the course outline to JSON string
             String courseOutlineJson = objectMapper.writeValueAsString(courseOutline);
             
@@ -47,6 +54,7 @@ public class StudyPlanService {
             studyPlan.setThreadId(UUID.randomUUID().toString()); // Generate new threadId
             studyPlan.setCourseStartDate(courseStartDate);
             studyPlan.setCourseEndDate(courseEndDate);
+            studyPlan.setStudyPlan(studyPlanJson);
             studyPlan.setCourseOutline(courseOutlineJson);
             
             return studyPlanRepository.save(studyPlan);
@@ -95,5 +103,77 @@ public class StudyPlanService {
      */
     public Optional<StudyPlan> getStudyPlanByThreadId(String threadId) {
         return studyPlanRepository.findByThreadId(threadId);
+    }
+
+    /**
+     * Updates the status of a specific week in a study plan
+     */
+    public Optional<StudyPlan> updateWeekStatus(String id, int weekNumber, String status) {
+        try {
+            // Validate status parameter
+            if (!isValidStatus(status)) {
+                throw new IllegalArgumentException("Invalid status: " + status + ". Must be one of: NOT_STARTED, IN_PROGRESS, COMPLETED");
+            }
+
+            Long studyPlanId = Long.parseLong(id);
+            Optional<StudyPlan> optionalStudyPlan = studyPlanRepository.findById(studyPlanId);
+            
+            if (optionalStudyPlan.isEmpty()) {
+                return Optional.empty();
+            }
+
+            StudyPlan studyPlan = optionalStudyPlan.get();
+            String studyPlanJson = studyPlan.getStudyPlan();
+            
+            if (studyPlanJson == null || studyPlanJson.trim().isEmpty()) {
+                throw new IllegalArgumentException("Study plan data is null or empty");
+            }
+
+            // Parse the study plan JSON
+            Map<String, Object> studyPlanData = objectMapper.readValue(studyPlanJson, Map.class);
+            Object studyPlanArray = studyPlanData.get("studyPlan");
+            
+            if (!(studyPlanArray instanceof java.util.List)) {
+                throw new IllegalArgumentException("Study plan data format is invalid");
+            }
+
+            java.util.List<Map<String, Object>> weeks = (java.util.List<Map<String, Object>>) studyPlanArray;
+            
+            // Find and update the specific week
+            boolean weekFound = false;
+            for (Map<String, Object> week : weeks) {
+                Object weekNumberObj = week.get("weekNumber");
+                if (weekNumberObj instanceof Integer && ((Integer) weekNumberObj).equals(weekNumber)) {
+                    week.put("status", status);
+                    weekFound = true;
+                    break;
+                }
+            }
+
+            if (!weekFound) {
+                throw new IllegalArgumentException("Week number " + weekNumber + " not found in study plan");
+            }
+
+            // Convert back to JSON and save
+            String updatedStudyPlanJson = objectMapper.writeValueAsString(studyPlanData);
+            studyPlan.setStudyPlan(updatedStudyPlanJson);
+            
+            StudyPlan savedStudyPlan = studyPlanRepository.save(studyPlan);
+            return Optional.of(savedStudyPlan);
+            
+        } catch (NumberFormatException e) {
+            return Optional.empty();
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException("Failed to process study plan JSON", e);
+        }
+    }
+
+    /**
+     * Validates if the provided status is one of the allowed values
+     */
+    private boolean isValidStatus(String status) {
+        return "NOT_STARTED".equals(status) || 
+               "IN_PROGRESS".equals(status) || 
+               "COMPLETED".equals(status);
     }
 }

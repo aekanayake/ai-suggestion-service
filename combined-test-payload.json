@@ -1,0 +1,64 @@
+{
+  "courseKey": "d140fb2e-67bf-4f2f-8cff-67362aae4c28",
+  "userKey": "74c2018b-2b29-4b45-92b8-c6a8f19c2989",
+  "courseStartDate": "2024-01-15",
+  "courseEndDate": "2024-05-15",
+  "courseOutline": {
+    "contentMeta": {
+      "shortTitle": "Black, 9",
+      "title": "STEADY_Master_Course_Package_Format_Black, Business Statistics, 9e",
+      "author": "Black",
+      "edition": "9",
+      "discipline": "Business & Decision Science"
+    },
+    "itemList": [
+      {
+        "id": "6768cf42-193f-422c-ac3a-274c6c69018a",
+        "type": "module",
+        "title": "Welcome to your Wiley Course"
+      }
+    ]
+  },
+  "studyPlan": [
+    {
+      "weekNumber": 1,
+      "startDate": "2025-07-01",
+      "endDate": "2025-07-07",
+      "status": "NOT_STARTED",
+      "topic": "Welcome to the Course!",
+      "motivationalMessage": "Let's kick off the journey to mastering Business Statistics!",
+      "tasks": [
+        {
+          "type": "Read",
+          "title": "What's Inside",
+          "url": "https://education-qa.wiley.com/content/shared/ebook/articles/welcome/v01/whats-inside.html"
+        },
+        {
+          "type": "Submit",
+          "title": "Presentación (Introduction)",
+          "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/masker/tools/220/products/cf276977-696c-4f34-9556-0a71dbbfe5bb/items/862"
+        }
+      ]
+    },
+    {
+      "weekNumber": 2,
+      "startDate": "2025-07-08",
+      "endDate": "2025-07-14",
+      "status": "NOT_STARTED",
+      "topic": "Introduction to Statistics",
+      "motivationalMessage": "Begin your exploration of statistical concepts with enthusiasm!",
+      "tasks": [
+        {
+          "type": "Read",
+          "title": "1.1 Basic Statistical Concepts",
+          "url": "https://education-qa.wiley.com/content/Black_Business_Statistics_9e/ebook/articles/EPROF18523/sec01_01.html"
+        },
+        {
+          "type": "Submit",
+          "title": "Ch 1: Homework",
+          "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/products/cf276977-696c-4f34-9556-0a71dbbfe5bb/assessments/5496e700-1363-49de-88d2-5d3ddd71522f"
+        }
+      ]
+    }
+  ]
+}

@@ -36,4 +36,19 @@ public class StudyPlanController {
         return studyPlan.map(ResponseEntity::ok)
                         .orElse(ResponseEntity.notFound().build());
     }
+
+    @PatchMapping("/{id}/week/{weekNumber}")
+    public ResponseEntity<StudyPlan> updateWeekStatus(
+            @PathVariable String id,
+            @PathVariable int weekNumber,
+            @RequestParam String status) {
+        
+        try {
+            Optional<StudyPlan> updatedStudyPlan = studyPlanService.updateWeekStatus(id, weekNumber, status);
+            return updatedStudyPlan.map(ResponseEntity::ok)
+                                  .orElse(ResponseEntity.notFound().build());
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().build();
+        }
+    }
 }
