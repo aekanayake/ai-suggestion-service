@@ -41,10 +41,15 @@ public class StudyPlanController {
     public ResponseEntity<StudyPlan> updateWeekStatus(
             @PathVariable String id,
             @PathVariable int weekNumber,
-            @RequestParam String status) {
+            @RequestBody Map<String, Object> requestBody) {
         
         try {
-            Optional<StudyPlan> updatedStudyPlan = studyPlanService.updateWeekStatus(id, weekNumber, status);
+            String status = (String) requestBody.get("status");
+            if (status == null) {
+                return ResponseEntity.badRequest().build();
+            }
+            
+            Optional<StudyPlan> updatedStudyPlan = studyPlanService.updateWeekStatus(id, weekNumber, status.toUpperCase());
             return updatedStudyPlan.map(ResponseEntity::ok)
                                   .orElse(ResponseEntity.notFound().build());
         } catch (IllegalArgumentException e) {

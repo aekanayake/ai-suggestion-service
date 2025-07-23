@@ -42,7 +42,7 @@ public class StudyPlanService {
             Object studyPlanData = requestPayload.get("studyPlan");
             String studyPlanJson = null;
             if (studyPlanData != null) {
-                studyPlanJson = objectMapper.writeValueAsString(requestPayload);
+                studyPlanJson = objectMapper.writeValueAsString(studyPlanData);
             }
             
             // Convert the course outline to JSON string
@@ -129,15 +129,24 @@ public class StudyPlanService {
                 throw new IllegalArgumentException("Study plan data is null or empty");
             }
 
-            // Parse the study plan JSON
-            Map<String, Object> studyPlanData = objectMapper.readValue(studyPlanJson, Map.class);
-            Object studyPlanArray = studyPlanData.get("studyPlan");
+            // Parse the study plan JSON - it should be an array directly or wrapped in an object
+            Object studyPlanData = objectMapper.readValue(studyPlanJson, Object.class);
+            java.util.List<Map<String, Object>> weeks;
             
-            if (!(studyPlanArray instanceof java.util.List)) {
+            if (studyPlanData instanceof java.util.List) {
+                // Direct array format
+                weeks = (java.util.List<Map<String, Object>>) studyPlanData;
+            } else if (studyPlanData instanceof Map) {
+                // Object with studyPlan property
+                Map<String, Object> dataMap = (Map<String, Object>) studyPlanData;
+                Object studyPlanArray = dataMap.get("studyPlan");
+                if (!(studyPlanArray instanceof java.util.List)) {
+                    throw new IllegalArgumentException("Study plan data format is invalid - no studyPlan array found");
+                }
+                weeks = (java.util.List<Map<String, Object>>) studyPlanArray;
+            } else {
                 throw new IllegalArgumentException("Study plan data format is invalid");
             }
-
-            java.util.List<Map<String, Object>> weeks = (java.util.List<Map<String, Object>>) studyPlanArray;
             
             // Find and update the specific week
             boolean weekFound = false;
@@ -155,7 +164,13 @@ public class StudyPlanService {
             }
 
             // Convert back to JSON and save
-            String updatedStudyPlanJson = objectMapper.writeValueAsString(studyPlanData);
+            String updatedStudyPlanJson;
+            if (studyPlanData instanceof java.util.List) {
+                updatedStudyPlanJson = objectMapper.writeValueAsString(weeks);
+            } else {
+                updatedStudyPlanJson = objectMapper.writeValueAsString(studyPlanData);
+            }
+            
             studyPlan.setStudyPlan(updatedStudyPlanJson);
             
             StudyPlan savedStudyPlan = studyPlanRepository.save(studyPlan);
