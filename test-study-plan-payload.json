@@ -1,0 +1,58 @@
+{
+  "courseKey": "STATS101",
+  "userKey": "user123",
+  "courseStartDate": "2025-07-01",
+  "courseEndDate": "2025-08-30",
+  "studyPlan": [
+    {
+      "weekNumber": 1,
+      "startDate": "2025-07-01",
+      "endDate": "2025-07-07",
+      "status": "NOT_STARTED",
+      "topic": "Welcome to the Course!",
+      "motivationalMessage": "Let's kick off the journey to mastering Business Statistics!",
+      "tasks": [
+        {
+          "type": "Read",
+          "title": "What's Inside",
+          "url": "https://education-qa.wiley.com/content/shared/ebook/articles/welcome/v01/whats-inside.html"
+        },
+        {
+          "type": "Read",
+          "title": "Looking for Help and Tips?",
+          "url": "https://education-qa.wiley.com/content/shared/ebook/articles/welcome/v01/looking-for-help-and-tips.html"
+        },
+        {
+          "type": "Submit",
+          "title": "Presentación (Introduction)",
+          "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/masker/tools/220/products/cf276977-696c-4f34-9556-0a71dbbfe5bb/items/862"
+        }
+      ]
+    },
+    {
+      "weekNumber": 2,
+      "startDate": "2025-07-08",
+      "endDate": "2025-07-14",
+      "status": "NOT_STARTED",
+      "topic": "Introduction to Statistics",
+      "motivationalMessage": "Begin your exploration of statistical concepts with enthusiasm!",
+      "tasks": []
+    }
+  ],
+  "courseOutline": {
+    "contentMeta": {
+      "shortTitle": "Stats 101",
+      "title": "Business Statistics Fundamentals",
+      "author": "Wiley",
+      "edition": "1",
+      "discipline": "Business & Decision Science"
+    },
+    "itemList": [
+      {
+        "id": "welcome-module",
+        "type": "module",
+        "title": "Welcome to Business Statistics"
+      }
+    ]
+  }
+}
