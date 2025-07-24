@@ -22,6 +22,9 @@ public class AzureOpenAiServiceImpl implements AzureOpenAiService{
     @Value("${azure.openai.assistant.id}")
     private String studyPlanCreationAssistantId;
 
+    @Value("${azure.openai.revise.assistant.id}")
+    private String studyPlanReviseAssistantId;
+
     private AssistantsClient client;
 
     @PostConstruct
@@ -71,6 +74,45 @@ public class AzureOpenAiServiceImpl implements AzureOpenAiService{
         }
         return null;
     }
+
+
+    public String reviseStudyPlan(String courseContentPayload) throws InterruptedException {
+        System.out.println("Revising study plan with payload: " + courseContentPayload);
+
+        AssistantThread thread = client.createThread(new AssistantThreadCreationOptions());
+        ThreadMessage threadMessage = client.createMessage(thread.getId(), new ThreadMessageOptions(MessageRole.USER,
+                courseContentPayload));
+        System.out.println("Thread created with ID: " + thread.getId());
+        System.out.println("Running the thread with Assistant ID: " + studyPlanReviseAssistantId);
+        ThreadRun run = client.createRun(thread.getId(), new CreateRunOptions(studyPlanReviseAssistantId));
+
+        do {
+            run = client.getRun(run.getThreadId(), run.getId());
+            System.out.println("Run status: " + run.getStatus());
+            Thread.sleep(1000);
+        } while (run.getStatus() == RunStatus.QUEUED || run.getStatus() == RunStatus.IN_PROGRESS);
+
+        PageableList<ThreadMessage> messages = client.listMessages(run.getThreadId());
+        List<ThreadMessage> data = messages.getData();
+        for (int i = 0; i < data.size(); i++) {
+            ThreadMessage dataMessage = data.get(i);
+            MessageRole role = dataMessage.getRole();
+            for (MessageContent messageContent : dataMessage.getContent()) {
+                if ("assistant".equals(role.toString())) {
+                    MessageTextContent messageTextContent = (MessageTextContent) messageContent;
+                    String response = messageTextContent.getText().getValue();
+                    response = response.replaceFirst("^```json\\s*", "")  // Remove starting ```json
+                            .replaceFirst("```\\s*$", "");
+                    System.out.println(i + ": Role = " + role + ", content = "
+                            + response);
+                    return response;
+                }
+
+            }
+        }
+        return null;
+    }
+
 
     public String createThread() {
         AssistantThread thread = client.createThread(new AssistantThreadCreationOptions());
