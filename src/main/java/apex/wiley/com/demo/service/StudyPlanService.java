@@ -80,6 +80,51 @@ public class StudyPlanService {
     }
 
     /**
+     * Updates the study plan for an existing record based on userKey and courseKey.
+     * Fetches existing study plan, sends it to AI with courseKey and userKey for update.
+     */
+    public StudyPlan updateStudyPlan(Map<String, Object> requestPayload) {
+        try {
+            // Extract required fields from the payload
+            String courseKey = (String) requestPayload.get("courseKey");
+            String userKey = (String) requestPayload.get("userKey");
+
+            if (courseKey == null || userKey == null) {
+                throw new IllegalArgumentException("Missing required fields: courseKey, userKey");
+            }
+
+            // Find existing study plan
+            Optional<StudyPlan> existingStudyPlanOpt = studyPlanRepository.findByCourseKeyAndUserKey(courseKey, userKey);
+            if (existingStudyPlanOpt.isEmpty()) {
+                throw new IllegalArgumentException("Study plan not found for courseKey: " + courseKey + " and userKey: " + userKey);
+            }
+
+            StudyPlan existingStudyPlan = existingStudyPlanOpt.get();
+
+            // Prepare payload for AI service with courseKey, userKey, and existing study plan
+            Map<String, Object> aiPayload = Map.of(
+                "courseKey", courseKey,
+                "userKey", userKey,
+                "studyPlan", existingStudyPlan.getStudyPlan()
+            );
+
+            // Generate updated study plan using AI
+            String updatedStudyPlanJson = azureOpenAiService.createStudyPlan(objectMapper.writeValueAsString(aiPayload));
+
+            // Update only the studyPlan property
+            existingStudyPlan.setStudyPlan(updatedStudyPlanJson);
+
+            // Save and return the updated study plan
+            return studyPlanRepository.save(existingStudyPlan);
+
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException("Failed to process AI payload JSON", e);
+        } catch (InterruptedException e) {
+            throw new RuntimeException("AI service was interrupted", e);
+        }
+    }
+
+    /**
      * Parses a date string into LocalDate, returns null if invalid or null
      */
     private LocalDate parseDate(String dateString) {

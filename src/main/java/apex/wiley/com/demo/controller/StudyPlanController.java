@@ -56,4 +56,16 @@ public class StudyPlanController {
             return ResponseEntity.badRequest().build();
         }
     }
+
+    @PutMapping
+    public ResponseEntity<StudyPlan> updateStudyPlan(@RequestBody Map<String, Object> requestPayload) {
+        try {
+            StudyPlan updatedStudyPlan = studyPlanService.updateStudyPlan(requestPayload);
+            return ResponseEntity.ok(updatedStudyPlan);
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().build();
+        } catch (RuntimeException e) {
+            return ResponseEntity.internalServerError().build();
+        }
+    }
 }
