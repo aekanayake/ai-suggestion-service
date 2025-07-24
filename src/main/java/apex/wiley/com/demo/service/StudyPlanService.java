@@ -105,11 +105,12 @@ public class StudyPlanService {
             Map<String, Object> aiPayload = Map.of(
                 "courseKey", courseKey,
                 "userKey", userKey,
-                "studyPlan", existingStudyPlan.getStudyPlan()
+                "originalStudyPlan", existingStudyPlan.getStudyPlan(),
+                "currentDate", LocalDate.now().toString() // Add current date for context
             );
 
             // Generate updated study plan using AI
-            String updatedStudyPlanJson = azureOpenAiService.createStudyPlan(objectMapper.writeValueAsString(aiPayload));
+            String updatedStudyPlanJson = azureOpenAiService.reviseStudyPlan(objectMapper.writeValueAsString(aiPayload));
 
             // Update only the studyPlan property
             existingStudyPlan.setStudyPlan(updatedStudyPlanJson);
