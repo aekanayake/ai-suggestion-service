@@ -1,0 +1,201 @@
+{
+  "info": {
+    "name": "AI Suggestion Service API",
+    "description": "Complete API collection for AI Suggestion Service - Study Plans and Student Analytics",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Student Analytics",
+      "item": [
+        {
+          "name": "Get Student Analytics - New Student",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/student/analytics?contextId=abc123&ltiUserId=new_student_456",
+              "host": ["{{baseUrl}}"],
+              "path": ["student", "analytics"],
+              "query": [
+                {
+                  "key": "contextId",
+                  "value": "abc123",
+                  "description": "Course context identifier"
+                },
+                {
+                  "key": "ltiUserId",
+                  "value": "new_student_456",
+                  "description": "LTI user identifier (contains 'new' to get new student data)"
+                }
+              ]
+            },
+            "description": "Returns analytics data for a new student with minimal progress"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Student Analytics - Active Student",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/student/analytics?contextId=abc123&ltiUserId=stu456",
+              "host": ["{{baseUrl}}"],
+              "path": ["student", "analytics"],
+              "query": [
+                {
+                  "key": "contextId",
+                  "value": "abc123",
+                  "description": "Course context identifier"
+                },
+                {
+                  "key": "ltiUserId",
+                  "value": "stu456",
+                  "description": "LTI user identifier"
+                }
+              ]
+            },
+            "description": "Returns analytics data for an active student with progress, assignments, and recommendations"
+          },
+          "response": []
+        }
+      ],
+      "description": "Student analytics endpoints for tracking student progress and recommendations"
+    },
+    {
+      "name": "Study Plan Management",
+      "item": [
+        {
+          "name": "Create Study Plan",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"courseKey\": \"course123\",\n  \"userKey\": \"user456\",\n  \"threadId\": \"thread789\",\n  \"studyPlan\": [\n    {\n      \"weekNumber\": 1,\n      \"startDate\": \"2025-07-01\",\n      \"endDate\": \"2025-07-07\",\n      \"status\": \"NOT_STARTED\",\n      \"topic\": \"Welcome to the Course!\",\n      \"motivationalMessage\": \"Let's kick off the journey!\",\n      \"tasks\": [\n        {\n          \"type\": \"Read\",\n          \"title\": \"What's Inside\",\n          \"url\": \"https://example.com/whats-inside\"\n        },\n        {\n          \"type\": \"Submit\",\n          \"title\": \"Introduction Assignment\",\n          \"url\": \"https://example.com/assignment-1\"\n        }\n      ]\n    },\n    {\n      \"weekNumber\": 2,\n      \"startDate\": \"2025-07-08\",\n      \"endDate\": \"2025-07-14\",\n      \"status\": \"NOT_STARTED\",\n      \"topic\": \"Introduction to Statistics\",\n      \"motivationalMessage\": \"Begin your exploration!\",\n      \"tasks\": [\n        {\n          \"type\": \"Read\",\n          \"title\": \"Basic Statistical Concepts\",\n          \"url\": \"https://example.com/statistics-101\"\n        }\n      ]\n    }\n  ],\n  \"courseOutline\": {\n    \"courseName\": \"Business Statistics\",\n    \"duration\": \"10 weeks\",\n    \"topics\": [\"Statistics\", \"Data Analysis\", \"Visualization\"]\n  }\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/study-plan",
+              "host": ["{{baseUrl}}"],
+              "path": ["study-plan"]
+            },
+            "description": "Creates a new study plan with course outline and weekly tasks"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Study Plan by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/study-plan/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["study-plan", "1"]
+            },
+            "description": "Retrieves a study plan by its unique ID"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Study Plan by Thread ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/study-plan/thread/thread789",
+              "host": ["{{baseUrl}}"],
+              "path": ["study-plan", "thread", "thread789"]
+            },
+            "description": "Retrieves a study plan by thread ID (conversation tracking)"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Study Plan",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"courseKey\": \"d140fb2e-67bf-4f2f-8cff-67362aae4c28\",\n  \"userKey\": \"74c2018b-2b29-4b45-92b8-c6a8f19c2989\",\n  \"studyPlan\": [\n    {\n      \"weekNumber\": 1,\n      \"startDate\": \"2025-07-01\",\n      \"endDate\": \"2025-07-07\",\n      \"status\": \"COMPLETED\",\n      \"topic\": \"Welcome to the Course!\",\n      \"motivationalMessage\": \"Great start!\",\n      \"tasks\": [\n        {\n          \"type\": \"Read\",\n          \"title\": \"What's Inside\",\n          \"url\": \"https://example.com/whats-inside\"\n        }\n      ]\n    }\n  ],\n  \"courseOutline\": {\n    \"courseName\": \"Updated Course\",\n    \"duration\": \"8 weeks\"\n  }\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/study-plan",
+              "host": ["{{baseUrl}}"],
+              "path": ["study-plan"]
+            },
+            "description": "Updates an existing study plan based on courseKey and userKey"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Week Status",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"COMPLETED\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/study-plan/1/week/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["study-plan", "1", "week", "1"]
+            },
+            "description": "Updates the status of a specific week in a study plan. Valid status values: NOT_STARTED, IN_PROGRESS, COMPLETED"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Week Status - In Progress",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"IN_PROGRESS\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/study-plan/1/week/2",
+              "host": ["{{baseUrl}}"],
+              "path": ["study-plan", "1", "week", "2"]
+            },
+            "description": "Marks a specific week as in progress"
+          },
+          "response": []
+        }
+      ],
+      "description": "Study plan management endpoints for creating and tracking student learning plans"
+    }
+  ]
+}
+
