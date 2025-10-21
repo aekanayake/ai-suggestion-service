@@ -16,7 +16,7 @@ public class StudentServiceImpl implements StudentService {
         // If ltiUserId contains "new" or is empty, return new student data
         // Otherwise, return active student data
         
-        if (ltiUserId != null && (ltiUserId.toLowerCase().contains("new") || ltiUserId.isEmpty())) {
+        if (ltiUserId == null || ltiUserId.isBlank() || ltiUserId.toLowerCase().contains("new")) {
             return getNewStudentData();
         } else {
             return getActiveStudentData();
