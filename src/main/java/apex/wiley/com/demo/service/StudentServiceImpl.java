@@ -59,19 +59,19 @@ public class StudentServiceImpl implements StudentService {
 
     private StudentData convertMockDataToStudentData(MockStudentData mockData) {
         StudentAnalyticsAiResponse aiAnalytics = null;
-        
+
         try {
             System.out.println("=== Starting AI Analytics Generation ===");
-            
+
             // Build payload for AI analysis
             String payload = buildStudentAnalysisPayload(mockData);
             System.out.println("Payload built successfully. Length: " + payload.length());
-            
+
             // Call Azure OpenAI service
             System.out.println("Calling Azure OpenAI service...");
             String aiResponse = azureOpenAiService.analyzeStudentPerformance(payload);
             System.out.println("Azure OpenAI service returned. Response is " + (aiResponse != null ? "not null" : "null"));
-            
+
             // Parse AI response
             if (aiResponse != null && !aiResponse.isEmpty()) {
                 System.out.println("Parsing AI response...");
@@ -83,7 +83,7 @@ public class StudentServiceImpl implements StudentService {
             System.err.println("Error getting AI analytics: " + e.getMessage());
             e.printStackTrace();
         }
-        
+
         // If AI analysis failed, use defaults
         if (aiAnalytics == null) {
             aiAnalytics = StudentAnalyticsAiResponse.builder()
@@ -93,7 +93,7 @@ public class StudentServiceImpl implements StudentService {
                 .recommendations(Collections.emptyList())
                 .build();
         }
-        
+
         return StudentData.builder()
             .studentType(mockData.getStudentType())
             .courseProgress(calculateCourseProgress(mockData.getAssignments()))
@@ -160,14 +160,14 @@ public class StudentServiceImpl implements StudentService {
             .status(mockAssignment.getStatus())
             .questionsCompleted(mockAssignment.getQuestionsCompleted())
             .totalQuestions(mockAssignment.getTotalQuestions())
-            .progress(mockAssignment.getProgress())
+            .progress(mockAssignment.getGrade())
             .build();
     }
 
     private String buildStudentAnalysisPayload(MockStudentData mockData) throws Exception {
         // Extract all questions from all assignments
         List<Question> allQuestions = new ArrayList<>();
-        
+
         if (mockData.getAssignments() != null) {
             for (MockAssignment assignment : mockData.getAssignments()) {
                 if (assignment.getQuestions() != null) {
@@ -175,7 +175,7 @@ public class StudentServiceImpl implements StudentService {
                 }
             }
         }
-        
+
         // Build a structured payload for AI
         Map<String, Object> payload = new HashMap<>();
         payload.put("currentDateTime", LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME));
@@ -183,20 +183,20 @@ public class StudentServiceImpl implements StudentService {
         payload.put("totalAssignments", mockData.getAssignments() != null ? mockData.getAssignments().size() : 0);
         payload.put("assignments", mockData.getAssignments());
         payload.put("totalQuestions", allQuestions.size());
-        
+
         // Calculate some statistics
         long completedQuestions = allQuestions.stream()
             .filter(q -> q.getNumAttempts() != null && q.getNumAttempts() > 0)
             .count();
-        
+
         long incorrectQuestions = allQuestions.stream()
             .filter(q -> q.getScore() != null && q.getScore() == 0 && q.getNumAttempts() != null && q.getNumAttempts() > 0)
             .count();
-        
+
         payload.put("completedQuestions", completedQuestions);
         payload.put("incorrectQuestions", incorrectQuestions);
         payload.put("questions", allQuestions);
-        
+
         // Add instruction for the AI
         String instruction = "Analyze this student data and provide analytics. " +
             "IMPORTANT: Study time should be RECOMMENDED HOURS PER WEEK based on upcoming assignment due dates and student performance. " +
@@ -210,9 +210,9 @@ public class StudentServiceImpl implements StudentService {
             "- topicNeedToAttention: Top 3-5 topics where student struggles (incorrect answers or multiple attempts), " +
             "- recentQuestions: Only the 3 MOST RECENT question attempts with their status (correct/incorrect/not_attempted), sorted by most recent first, " +
             "- recommendations: Top 3-5 personalized study recommendations prioritized by urgency and due dates.";
-        
+
         payload.put("instruction", instruction);
-        
+
         return objectMapper.writeValueAsString(payload);
     }
 
@@ -220,20 +220,20 @@ public class StudentServiceImpl implements StudentService {
         try {
             System.out.println("=== Parsing AI Response ===");
             System.out.println("Raw AI Response: " + aiResponse);
-            
+
             StudentAnalyticsAiResponse response = objectMapper.readValue(aiResponse, StudentAnalyticsAiResponse.class);
-            
+
             System.out.println("Parsed successfully!");
             System.out.println("Study Time: " + response.getStudyTime());
             System.out.println("Topics Need Attention: " + (response.getTopicNeedToAttention() != null ? response.getTopicNeedToAttention().size() : "null"));
             System.out.println("Recent Questions: " + (response.getRecentQuestions() != null ? response.getRecentQuestions().size() : "null"));
             System.out.println("Recommendations: " + (response.getRecommendations() != null ? response.getRecommendations().size() : "null"));
-            
+
             return response;
         } catch (Exception e) {
             System.err.println("Failed to parse AI response: " + e.getMessage());
             e.printStackTrace();
-            
+
             // Return default values if parsing fails
             return StudentAnalyticsAiResponse.builder()
                 .studyTime(0.0)
