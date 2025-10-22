@@ -1,0 +1,382 @@
+{
+    "studentType": "active",
+    "assignments": [
+        {
+            "id": "8d6c71cfc619f0cd54f47fb2abafa4d87388561263c1a4530aeffa13b196cb58",
+            "title": "Assessment 1",
+            "dueDate": "2025-10-29T18:29:00Z",
+            "status": "in_progress",
+            "questionsCompleted": 7,
+            "totalQuestions": 10,
+            "correctQuestions": 5,
+            "progress": 70,
+            "grade": 50,
+            "Question": [
+                {
+                    "questionId": "f9c1e3db-5086-49f2-8def-d76836679057",
+                    "title": "Decision Dilemma Question 1.01",
+                    "numAttempts": 1,
+                    "maxAttempts": 3,
+                    "score": 2.0,
+                    "orgReferenceId": "90fb8cbd-0f40-4385-aeac-96505e449ce1",
+                    "orgReferenceTitle": "1.1 Basic Statistical Concepts",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/18!/4/2/6"
+                },
+                {
+                    "questionId": "bf6fbaac-8090-4036-9704-50f506442aa1",
+                    "title": "Decision Dilemma Solved Question 1.01",
+                    "numAttempts": 3,
+                    "maxAttempts": 3,
+                    "score": 0,
+                    "lastSubmitDate": "2025-10-21T06:02:51.375Z",
+                    "orgReferenceId": "6e6ca910-5107-402a-810c-9b8740365542",
+                    "orgReferenceTitle": "1.2 Data Measurement",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/18!/4/2/8"
+                },
+                {
+                    "questionId": "0bfe453d-c3cc-4c21-8fcc-e4016aa04ab4",
+                    "title": "Decision Dilemma Question 2.01",
+                    "numAttempts": 3,
+                    "maxAttempts": 3,
+                    "score": 0,
+                    "lastSubmitDate": "2025-10-21T06:07:25.723Z",
+                    "orgReferenceId": "be14c1aa-b807-46f8-8a67-529fa0f83229",
+                    "orgReferenceTitle": "2.1 Frequency Distributions",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/20!/4/2/6"
+                },
+                {
+                    "questionId": "f18dfda9-0430-4a3c-825f-384f5067803c",
+                    "title": "End of Section Problem 2.17",
+                    "numAttempts": 1,
+                    "maxAttempts": 3,
+                    "score": 2.0,
+                    "lastSubmitDate": "2025-10-21T06:03:19.095Z",
+                    "orgReferenceId": "6489f47b-d974-4cbf-8d41-f60ef38ac5c9",
+                    "orgReferenceTitle": "2.3 Qualitative Data Graphs",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/20!/4/2/8"
+                },
+                {
+                    "questionId": "94c61c00-a331-4212-96ae-aa8ac0b22e1f",
+                    "title": "Practice Question 2.40",
+                    "numAttempts": 3,
+                    "maxAttempts": 3,
+                    "score": 2.0,
+                    "lastSubmitDate": "2025-10-21T06:07:44.400Z",
+                    "orgReferenceId": "6489f47b-d974-4cbf-8d41-f60ef38ac5c9",
+                    "orgReferenceTitle": "2.3 Qualitative Data Graphs",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/20!/4/2/8"
+                },
+                {
+                    "questionId": "97765c07-8b2a-4a38-a674-a8d9a62b8306",
+                    "title": "Practice Question 2.42",
+                    "numAttempts": 3,
+                    "maxAttempts": 3,
+                    "score": 2.0,
+                    "lastSubmitDate": "2025-10-21T06:06:30.992Z",
+                    "orgReferenceId": "6489f47b-d974-4cbf-8d41-f60ef38ac5c9",
+                    "orgReferenceTitle": "2.3 Qualitative Data Graphs",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/20!/4/2/8"
+                },
+                {
+                    "questionId": "d0b2a155-467f-42dc-8a6a-eac8587246ee",
+                    "title": "Testbank Question 1.02",
+                    "numAttempts": 1,
+                    "maxAttempts": 3,
+                    "score": 2.0,
+                    "lastSubmitDate": "2025-10-21T06:06:37.823Z",
+                    "orgReferenceId": "90fb8cbd-0f40-4385-aeac-96505e449ce1",
+                    "orgReferenceTitle": "1.1 Basic Statistical Concepts",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/18!/4/2/6"
+                },
+                {
+                    "questionId": "a5f64876-894e-4827-a67c-3d7318fece99",
+                    "title": "Testbank Question 1.04",
+                    "numAttempts": 1,
+                    "maxAttempts": 3,
+                    "score": 2.0,
+                    "lastSubmitDate": "2025-10-21T06:06:44.347Z",
+                    "orgReferenceId": "90fb8cbd-0f40-4385-aeac-96505e449ce1",
+                    "orgReferenceTitle": "1.1 Basic Statistical Concepts",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/18!/4/2/6"
+                },
+                {
+                    "questionId": "cd0adf58-3839-414f-8b5a-4125c6d91ae2",
+                    "title": "Testbank Question 1.07",
+                    "numAttempts": 1,
+                    "maxAttempts": 3,
+                    "score": 2.0,
+                    "lastSubmitDate": "2025-10-21T06:06:50.963Z",
+                    "orgReferenceId": "90fb8cbd-0f40-4385-aeac-96505e449ce1",
+                    "orgReferenceTitle": "1.1 Basic Statistical Concepts",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/18!/4/2/6"
+                },
+                {
+                    "questionId": "b1261690-452f-42d0-8da8-665dfeaea53c",
+                    "title": "Testbank Question 1.10",
+                    "numAttempts": 1,
+                    "maxAttempts": 3,
+                    "score": 2.0,
+                    "lastSubmitDate": "2025-10-21T06:06:57.631Z",
+                    "orgReferenceId": "90fb8cbd-0f40-4385-aeac-96505e449ce1",
+                    "orgReferenceTitle": "1.1 Basic Statistical Concepts",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/18!/4/2/6"
+                }
+            ]
+        },
+        {
+            "id": "a5d2c5822df14bd5a2fd16e3acd09f2ddd763ac383feae9a0f3457cbcc2f7cc8",
+            "title": "Assessment 2",
+            "dueDate": "2025-11-03T18:29:00Z",
+            "status": "complete",
+            "questionsCompleted": 10,
+            "totalQuestions": 10,
+            "progress": 100,
+            "correctQuestions": 8,
+            "grade": 80,
+            "Question": [
+                {
+                    "questionId": "e2470a0c-69a5-42c5-82da-b9570b0c3539",
+                    "title": "1.3d Practice the Skill - SkillBuilder 1.2 (Molecular Drawing)",
+                    "numAttempts": 2,
+                    "maxAttempts": 3,
+                    "score": 0,
+                    "lastSubmitDate": "2025-10-21T06:12:35.317Z",
+                    "orgReferenceId": "f7e32a09-bab5-4913-bd03-d47635138a47",
+                    "orgReferenceTitle":"What's Inside",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=f7e32a09-bab5-4913-bd03-d47635138a47&icr=1"
+                },
+                {
+                    "questionId": "c536954f-6a97-4053-b67f-c85828c6c360",
+                    "title": "02.03-PR006 (Video Solution)",
+                    "numAttempts": 1,
+                    "maxAttempts": 3,
+                    "score": 0,
+                    "lastSubmitDate": "2025-10-21T06:13:19.096Z",
+                    "orgReferenceId": "f7e32a09-bab5-4913-bd03-d47635138a47",
+                    "orgReferenceTitle":"What's Inside",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=f7e32a09-bab5-4913-bd03-d47635138a47&icr=1"
+                },
+                {
+                    "questionId": "0e20f685-059b-44d2-aa36-d83733d3985f",
+                    "title": "02.07-PR016 (Excel Lesson)",
+                    "numAttempts": 1,
+                    "maxAttempts": 3,
+                    "score": 0,
+                    "lastSubmitDate": "2025-10-21T06:13:34.078Z",
+                    "orgReferenceId": "f7e32a09-bab5-4913-bd03-d47635138a47",
+                    "orgReferenceTitle":"What's Inside",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=f7e32a09-bab5-4913-bd03-d47635138a47&icr=1"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 3,
+                    "title": "2D Sketcher Question with radical",
+                    "orgReferenceId": "1b0b02d2-f4fb-45cf-b269-73d529db43a5",
+                    "orgReferenceTitle":"How to Succeed in This Course",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=1b0b02d2-f4fb-45cf-b269-73d529db43a5&icr=1"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 3,
+                    "mqId": "d2ba6124-5f96-4902-98d3-c6613210335b",
+                    "title": "2MD",
+                    "orgReferenceId": "f7e32a09-bab5-4913-bd03-d47635138a47",
+                    "orgReferenceTitle":"What's Inside",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=f7e32a09-bab5-4913-bd03-d47635138a47&icr=1"
+                },
+                {
+                    "questionId": "73da584d-6aec-4078-9f3d-0755c4739eaf",
+                    "title": "Linked to multiple sections within different chapters",
+                    "numAttempts": 2,
+                    "maxAttempts": 3,
+                    "score": 1.0,
+                    "lastSubmitDate": "2025-10-21T06:13:56.516Z",
+                    "orgReferenceId": "ed3fdca4-539a-4456-850c-42fe32899f28",
+                    "orgReferenceTitle":"Ch 1: CPA Exam Video Lessons",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=ed3fdca4-539a-4456-850c-42fe32899f28&icr=1"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 3,
+                    "derivedFrom": "e255d4b7-910d-4cfc-b4c3-fae498e845b9",
+                    "title": "End of Section Problem 2.5 (Essay)",
+                    "orgReferenceId": "be14c1aa-b807-46f8-8a67-529fa0f83229",
+                    "orgReferenceTitle": "2.1 Frequency Distributions",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/20!/4/2/6"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 3,
+                    "derivedFrom": "081b103d-97df-4480-a895-43ab5af06db8",
+                    "title": "End of Section Problem 2.6 (Essay)",
+                    "orgReferenceId": "d66640ca-8fad-4cc4-b9a7-37fa151cc010",
+                    "orgReferenceTitle":"2.2 Quantitative Data Graphs",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/20!/4/2/8"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 3,
+                    "weight": 1.0,
+                    "derivedFrom": "eb6ef0fb-b5ff-4afe-ad69-177de74fc4e9",
+                    "title": "End of Section Problem 2.7",
+                    "orgReferenceId": "d66640ca-8fad-4cc4-b9a7-37fa151cc010",
+                    "orgReferenceTitle":"2.2 Quantitative Data Graphs",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/20!/4/2/8"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 3,
+                    "weight": 1.0,
+                    "derivedFrom": "f1047554-6351-4d2b-a884-47e888783eee",
+                    "title": "End of Section Problem 2.8",
+                    "orgReferenceId":"d66640ca-8fad-4cc4-b9a7-37fa151cc010",
+                    "orgReferenceTitle":"2.2 Quantitative Data Graphs",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/20!/4/2/8"
+                }
+            ]
+        },
+        {
+            "id": "64fe1338d0040d39aebe10c283b7cada8397c3bdd6015d1c885d965aad930cf8",
+            "title": "Exam",
+            "dueDate": "2025-11-07T08:30:00Z",
+            "status": "in_progress",
+            "questionsCompleted": 5,
+            "totalQuestions": 10,
+            "progress": 50,
+            "grade": 35,
+            "Question": [
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 5.0,
+                    "derivedFrom": "b7559724-c2d1-4af1-b21c-ebdd9f74b6fc",
+                    "title": "#Sprint38 #DifferentFields #AltAns Chapter 3, Section 4, Exercise 104",
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 10.0,
+                    "derivedFrom": "65faf208-5ae1-45d8-b25e-f1ce28e960b9",
+                    "title": "100 with 3 types of tolerance",
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 10.0,
+                    "derivedFrom": "6158d7e0-cd00-4912-97ad-5654743b8d11",
+                    "title": "200 TE-N with 4 types of tolerance",
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 2.0,
+                    "derivedFrom": "9df1353c-29c9-4afd-bf92-ce7703a0a388",
+                    "title": "3172 Problem 5-3",
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 2.0,
+                    "derivedFrom": "7102741d-9199-4277-8552-b1b94c3962f2",
+                    "title": "Chapter 06, Testbank Question 17",
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 2.0,
+                    "derivedFrom": "b49d64c4-0a81-4449-b80f-87389a5bb550",
+                    "title": "Chapter 06, Testbank Question 18",
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 2.0,
+                    "derivedFrom": "ccaf435c-6247-4721-837c-09853ca4be1d",
+                    "title": "Chapter 06, Testbank Question 27",
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 2.0,
+                    "derivedFrom": "8b346848-532b-4c7b-9337-e547e9c88c2c",
+                    "title": "Linked to multiple sections within different chapters",
+                    "orgReferenceId":"ea5309ef-3705-4368-a364-21ca914c433d",
+                    "orgReferenceTitle":"Data Analytics Lesson 02: Challenges of Big Data",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=ea5309ef-3705-4368-a364-21ca914c433d&icr=1"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 10.0,
+                    "derivedFrom": "2f900569-fd5d-42f7-9d58-9d2644c8dab9",
+                    "title": "WileyPLUS Problem 2-06",
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 5.0,
+                    "derivedFrom": "7575e940-cd8e-47b6-82eb-2ef3f29c7d3f",
+                    "title": "MP Parts Re-authoring",
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
+                }
+            ]
+        }
+    ]
+}
+
