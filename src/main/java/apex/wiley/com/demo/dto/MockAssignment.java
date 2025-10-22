@@ -18,6 +18,7 @@ public class MockAssignment {
     private String dueDate;
     private String status;
     private Integer questionsCompleted;
+    private Integer correctQuestions;
     private Integer totalQuestions;
     private Integer progress;
     private Integer grade;

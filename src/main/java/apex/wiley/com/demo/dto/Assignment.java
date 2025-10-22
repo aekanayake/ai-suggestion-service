@@ -16,6 +16,7 @@ public class Assignment {
     private String status;
     private Integer questionsCompleted;
     private Integer totalQuestions;
+    private Integer correctQuestions;
     private Integer progress;
 }
 

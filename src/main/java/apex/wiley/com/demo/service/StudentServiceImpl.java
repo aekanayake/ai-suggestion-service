@@ -125,16 +125,18 @@ public class StudentServiceImpl implements StudentService {
             return 0;
         }
 
-        // Calculate average grade from completed assignments only
-        List<MockAssignment> completedAssignments = assignments.stream()
-            .filter(assignment -> "complete".equals(assignment.getStatus()) && assignment.getGrade() != null)
+        // Calculate average grade from complete and in_progress assignments only (exclude not_started)
+        List<MockAssignment> gradedAssignments = assignments.stream()
+            .filter(assignment -> !assignment.getStatus().equals("not_started") 
+                && assignment.getGrade() != null 
+                && assignment.getGrade() > 0)
             .collect(Collectors.toList());
 
-        if (completedAssignments.isEmpty()) {
+        if (gradedAssignments.isEmpty()) {
             return 0;
         }
 
-        double averageGrade = completedAssignments.stream()
+        double averageGrade = gradedAssignments.stream()
             .mapToDouble(MockAssignment::getGrade)
             .average()
             .orElse(0.0);
@@ -159,6 +161,7 @@ public class StudentServiceImpl implements StudentService {
             .dueDate(mockAssignment.getDueDate())
             .status(mockAssignment.getStatus())
             .questionsCompleted(mockAssignment.getQuestionsCompleted())
+            .correctQuestions(mockAssignment.getCorrectQuestions())
             .totalQuestions(mockAssignment.getTotalQuestions())
             .progress(mockAssignment.getGrade())
             .build();

@@ -8,8 +8,9 @@
             "status": "complete",
             "questionsCompleted": 10,
             "totalQuestions": 10,
+            "correctQuestions": 7,
             "progress": 100,
-            "grade": 7,
+            "grade": 70,
             "Question": [
                 {
                     "questionId": "f9c1e3db-5086-49f2-8def-d76836679057",
@@ -140,7 +141,8 @@
             "questionsCompleted": 4,
             "totalQuestions": 10,
             "progress": 60,
-            "grade": 1,
+            "correctQuestions": 1,
+            "grade": 10,
             "Question": [
                 {
                     "questionId": "e2470a0c-69a5-42c5-82da-b9570b0c3539",
