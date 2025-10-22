@@ -5,13 +5,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class RecentQuestion {
-    private String id;
-    private String question;
-    private String status;
+public class MockStudentData {
+    private String studentType;
+    private List<MockAssignment> assignments;
 }
-
