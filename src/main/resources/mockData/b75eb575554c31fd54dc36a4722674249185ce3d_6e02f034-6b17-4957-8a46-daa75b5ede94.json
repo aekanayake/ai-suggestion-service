@@ -223,7 +223,98 @@
             "totalQuestions": 10,
             "progress": 0,
             "grade": 0,
-            "Question": []
+            "Question": [
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 5.0,
+                    "derivedFrom": "b7559724-c2d1-4af1-b21c-ebdd9f74b6fc",
+                    "title": "#Sprint38 #DifferentFields #AltAns Chapter 3, Section 4, Exercise 104",
+                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
+                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 10.0,
+                    "derivedFrom": "65faf208-5ae1-45d8-b25e-f1ce28e960b9",
+                    "title": "100 with 3 types of tolerance",
+                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
+                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 10.0,
+                    "derivedFrom": "6158d7e0-cd00-4912-97ad-5654743b8d11",
+                    "title": "200 TE-N with 4 types of tolerance",
+                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
+                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 2.0,
+                    "derivedFrom": "9df1353c-29c9-4afd-bf92-ce7703a0a388",
+                    "title": "3172 Problem 5-3",
+                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
+                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 2.0,
+                    "derivedFrom": "7102741d-9199-4277-8552-b1b94c3962f2",
+                    "title": "Chapter 06, Testbank Question 17",
+                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
+                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 2.0,
+                    "derivedFrom": "b49d64c4-0a81-4449-b80f-87389a5bb550",
+                    "title": "Chapter 06, Testbank Question 18",
+                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
+                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 2.0,
+                    "derivedFrom": "ccaf435c-6247-4721-837c-09853ca4be1d",
+                    "title": "Chapter 06, Testbank Question 27",
+                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
+                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 2.0,
+                    "derivedFrom": "8b346848-532b-4c7b-9337-e547e9c88c2c",
+                    "title": "Linked to multiple sections within different chapters",
+                    "orgReferenceId":"30eb45a9-a14f-4d40-a729-79287fbb950a",
+                    "orgReferenceTitle":"Data Analytics Lesson 02: Challenges of Big Data"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 10.0,
+                    "derivedFrom": "2f900569-fd5d-42f7-9d58-9d2644c8dab9",
+                    "title": "WileyPLUS Problem 2-06",
+                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
+                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 1,
+                    "weight": 5.0,
+                    "derivedFrom": "7575e940-cd8e-47b6-82eb-2ef3f29c7d3f",
+                    "title": "MP Parts Re-authoring",
+                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
+                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                }
+            ]
         }
     ]
 }
