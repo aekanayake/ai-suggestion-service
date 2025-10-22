@@ -17,8 +17,10 @@
                     "numAttempts": 1,
                     "maxAttempts": 3,
                     "score": 2.0,
-                    "orgReferenceId": "16c75de2-221b-4cd0-a901-94a2a2b81668",
-                    "orgReferenceTitle": "1.1 Basic Statistical Concepts"
+                    "orgReferenceId": "90fb8cbd-0f40-4385-aeac-96505e449ce1",
+                    "orgReferenceTitle": "1.1 Basic Statistical Concepts",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/18!/4/2/6"
                 },
                 {
                     "questionId": "bf6fbaac-8090-4036-9704-50f506442aa1",
@@ -27,8 +29,10 @@
                     "maxAttempts": 3,
                     "score": 0,
                     "lastSubmitDate": "2025-10-21T06:02:51.375Z",
-                    "orgReferenceId": "0207c41d-fd71-4c08-9508-1b3d29116af8",
-                    "orgReferenceTitle": "1.3 A Look at IFRS"
+                    "orgReferenceId": "6e6ca910-5107-402a-810c-9b8740365542",
+                    "orgReferenceTitle": "1.2 Data Measurement",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/18!/4/2/8"
                 },
                 {
                     "questionId": "0bfe453d-c3cc-4c21-8fcc-e4016aa04ab4",
@@ -37,8 +41,10 @@
                     "maxAttempts": 3,
                     "score": 0,
                     "lastSubmitDate": "2025-10-21T06:07:25.723Z",
-                    "orgReferenceId": "01c29da0-8c38-417d-a27e-7a48be10c698",
-                    "orgReferenceTitle": "2.1 Frequency Distributions"
+                    "orgReferenceId": "be14c1aa-b807-46f8-8a67-529fa0f83229",
+                    "orgReferenceTitle": "2.1 Frequency Distributions",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/20!/4/2/6"
                 },
                 {
                     "questionId": "f18dfda9-0430-4a3c-825f-384f5067803c",
@@ -47,8 +53,10 @@
                     "maxAttempts": 3,
                     "score": 2.0,
                     "lastSubmitDate": "2025-10-21T06:03:19.095Z",
-                    "orgReferenceId": "fd925acd-3bf6-416a-979d-3e587edf5a80",
-                    "orgReferenceTitle": "2.3 Qualitative Data Graphs"
+                    "orgReferenceId": "6489f47b-d974-4cbf-8d41-f60ef38ac5c9",
+                    "orgReferenceTitle": "2.3 Qualitative Data Graphs",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/20!/4/2/8"
                 },
                 {
                     "questionId": "94c61c00-a331-4212-96ae-aa8ac0b22e1f",
@@ -57,8 +65,10 @@
                     "maxAttempts": 3,
                     "score": 2.0,
                     "lastSubmitDate": "2025-10-21T06:07:44.400Z",
-                    "orgReferenceId": "fd925acd-3bf6-416a-979d-3e587edf5a80",
-                    "orgReferenceTitle": "2.3 Qualitative Data Graphs"
+                    "orgReferenceId": "6489f47b-d974-4cbf-8d41-f60ef38ac5c9",
+                    "orgReferenceTitle": "2.3 Qualitative Data Graphs",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/20!/4/2/8"
                 },
                 {
                     "questionId": "97765c07-8b2a-4a38-a674-a8d9a62b8306",
@@ -67,8 +77,10 @@
                     "maxAttempts": 3,
                     "score": 2.0,
                     "lastSubmitDate": "2025-10-21T06:06:30.992Z",
-                    "orgReferenceId": "fd925acd-3bf6-416a-979d-3e587edf5a80",
-                    "orgReferenceTitle": "2.3 Qualitative Data Graphs"
+                    "orgReferenceId": "6489f47b-d974-4cbf-8d41-f60ef38ac5c9",
+                    "orgReferenceTitle": "2.3 Qualitative Data Graphs",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/20!/4/2/8"
                 },
                 {
                     "questionId": "d0b2a155-467f-42dc-8a6a-eac8587246ee",
@@ -77,8 +89,10 @@
                     "maxAttempts": 3,
                     "score": 2.0,
                     "lastSubmitDate": "2025-10-21T06:06:37.823Z",
-                    "orgReferenceId": "16c75de2-221b-4cd0-a901-94a2a2b81668",
-                    "orgReferenceTitle": "1.1 Basic Statistical Concepts"
+                    "orgReferenceId": "90fb8cbd-0f40-4385-aeac-96505e449ce1",
+                    "orgReferenceTitle": "1.1 Basic Statistical Concepts",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/18!/4/2/6"
                 },
                 {
                     "questionId": "a5f64876-894e-4827-a67c-3d7318fece99",
@@ -87,8 +101,10 @@
                     "maxAttempts": 3,
                     "score": 2.0,
                     "lastSubmitDate": "2025-10-21T06:06:44.347Z",
-                    "orgReferenceId": "16c75de2-221b-4cd0-a901-94a2a2b81668",
-                    "orgReferenceTitle": "1.1 Basic Statistical Concepts"
+                    "orgReferenceId": "90fb8cbd-0f40-4385-aeac-96505e449ce1",
+                    "orgReferenceTitle": "1.1 Basic Statistical Concepts",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/18!/4/2/6"
                 },
                 {
                     "questionId": "cd0adf58-3839-414f-8b5a-4125c6d91ae2",
@@ -97,8 +113,10 @@
                     "maxAttempts": 3,
                     "score": 2.0,
                     "lastSubmitDate": "2025-10-21T06:06:50.963Z",
-                    "orgReferenceId": "16c75de2-221b-4cd0-a901-94a2a2b81668",
-                    "orgReferenceTitle": "1.1 Basic Statistical Concepts"
+                    "orgReferenceId": "90fb8cbd-0f40-4385-aeac-96505e449ce1",
+                    "orgReferenceTitle": "1.1 Basic Statistical Concepts",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/18!/4/2/6"
                 },
                 {
                     "questionId": "b1261690-452f-42d0-8da8-665dfeaea53c",
@@ -107,8 +125,10 @@
                     "maxAttempts": 3,
                     "score": 2.0,
                     "lastSubmitDate": "2025-10-21T06:06:57.631Z",
-                    "orgReferenceId": "16c75de2-221b-4cd0-a901-94a2a2b81668",
-                    "orgReferenceTitle": "1.1 Basic Statistical Concepts"
+                    "orgReferenceId": "90fb8cbd-0f40-4385-aeac-96505e449ce1",
+                    "orgReferenceTitle": "1.1 Basic Statistical Concepts",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/18!/4/2/6"
                 }
             ]
         },
@@ -129,9 +149,10 @@
                     "maxAttempts": 3,
                     "score": 0,
                     "lastSubmitDate": "2025-10-21T06:12:35.317Z",
-                    "orgReferenceId": "31929865-edc1-42f8-a12c-4e3ee829c6d4",
-                    "orgReferenceTitle":"What's Inside"
-
+                    "orgReferenceId": "f7e32a09-bab5-4913-bd03-d47635138a47",
+                    "orgReferenceTitle":"What's Inside",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=f7e32a09-bab5-4913-bd03-d47635138a47&icr=1"
                 },
                 {
                     "questionId": "c536954f-6a97-4053-b67f-c85828c6c360",
@@ -140,8 +161,10 @@
                     "maxAttempts": 3,
                     "score": 0,
                     "lastSubmitDate": "2025-10-21T06:13:19.096Z",
-                    "orgReferenceId": "31929865-edc1-42f8-a12c-4e3ee829c6d4",
-                    "orgReferenceTitle":"What's Inside"
+                    "orgReferenceId": "f7e32a09-bab5-4913-bd03-d47635138a47",
+                    "orgReferenceTitle":"What's Inside",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=f7e32a09-bab5-4913-bd03-d47635138a47&icr=1"
                 },
                 {
                     "questionId": "0e20f685-059b-44d2-aa36-d83733d3985f",
@@ -150,23 +173,29 @@
                     "maxAttempts": 3,
                     "score": 0,
                     "lastSubmitDate": "2025-10-21T06:13:34.078Z",
-                    "orgReferenceId": "31929865-edc1-42f8-a12c-4e3ee829c6d4",
-                    "orgReferenceTitle":"What's Inside"
+                    "orgReferenceId": "f7e32a09-bab5-4913-bd03-d47635138a47",
+                    "orgReferenceTitle":"What's Inside",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=f7e32a09-bab5-4913-bd03-d47635138a47&icr=1"
                 },
                 {
                     "numAttempts": 0,
                     "maxAttempts": 3,
                     "title": "2D Sketcher Question with radical",
-                    "orgReferenceId": "cd79ad5e-e71f-4ccd-97af-db03a6eb67f7",
-                    "orgReferenceTitle":"How to Succeed in This Course"
+                    "orgReferenceId": "1b0b02d2-f4fb-45cf-b269-73d529db43a5",
+                    "orgReferenceTitle":"How to Succeed in This Course",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=1b0b02d2-f4fb-45cf-b269-73d529db43a5&icr=1"
                 },
                 {
                     "numAttempts": 0,
                     "maxAttempts": 3,
                     "mqId": "d2ba6124-5f96-4902-98d3-c6613210335b",
                     "title": "2MD",
-                    "orgReferenceId": "31929865-edc1-42f8-a12c-4e3ee829c6d4",
-                    "orgReferenceTitle":"What's Inside"
+                    "orgReferenceId": "f7e32a09-bab5-4913-bd03-d47635138a47",
+                    "orgReferenceTitle":"What's Inside",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=f7e32a09-bab5-4913-bd03-d47635138a47&icr=1"
                 },
                 {
                     "questionId": "73da584d-6aec-4078-9f3d-0755c4739eaf",
@@ -175,24 +204,30 @@
                     "maxAttempts": 3,
                     "score": 1.0,
                     "lastSubmitDate": "2025-10-21T06:13:56.516Z",
-                    "orgReferenceId": "2c892d9c-de36-42f1-ac96-3ee0ffb99648",
-                    "orgReferenceTitle":"Ch 1: CPA Exam Video Lessons"
+                    "orgReferenceId": "ed3fdca4-539a-4456-850c-42fe32899f28",
+                    "orgReferenceTitle":"Ch 1: CPA Exam Video Lessons",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=ed3fdca4-539a-4456-850c-42fe32899f28&icr=1"
                 },
                 {
                     "numAttempts": 0,
                     "maxAttempts": 3,
                     "derivedFrom": "e255d4b7-910d-4cfc-b4c3-fae498e845b9",
                     "title": "End of Section Problem 2.5 (Essay)",
-                    "orgReferenceId": "01c29da0-8c38-417d-a27e-7a48be10c698",
-                    "orgReferenceTitle": "2.1 Frequency Distributions"
+                    "orgReferenceId": "be14c1aa-b807-46f8-8a67-529fa0f83229",
+                    "orgReferenceTitle": "2.1 Frequency Distributions",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/20!/4/2/6"
                 },
                 {
                     "numAttempts": 0,
                     "maxAttempts": 3,
                     "derivedFrom": "081b103d-97df-4480-a895-43ab5af06db8",
                     "title": "End of Section Problem 2.6 (Essay)",
-                    "orgReferenceId": "13ed65bf-f986-420d-85cf-3eb6c92b9a77",
-                    "orgReferenceTitle":"2.2 Quantitative Data Graphs"
+                    "orgReferenceId": "d66640ca-8fad-4cc4-b9a7-37fa151cc010",
+                    "orgReferenceTitle":"2.2 Quantitative Data Graphs",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/20!/4/2/8"
                 },
                 {
                     "numAttempts": 0,
@@ -200,8 +235,10 @@
                     "weight": 1.0,
                     "derivedFrom": "eb6ef0fb-b5ff-4afe-ad69-177de74fc4e9",
                     "title": "End of Section Problem 2.7",
-                    "orgReferenceId": "13ed65bf-f986-420d-85cf-3eb6c92b9a77",
-                    "orgReferenceTitle":"2.2 Quantitative Data Graphs"
+                    "orgReferenceId": "d66640ca-8fad-4cc4-b9a7-37fa151cc010",
+                    "orgReferenceTitle":"2.2 Quantitative Data Graphs",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/20!/4/2/8"
                 },
                 {
                     "numAttempts": 0,
@@ -209,8 +246,10 @@
                     "weight": 1.0,
                     "derivedFrom": "f1047554-6351-4d2b-a884-47e888783eee",
                     "title": "End of Section Problem 2.8",
-                    "orgReferenceId":"13ed65bf-f986-420d-85cf-3eb6c92b9a77",
-                    "orgReferenceTitle":"2.2 Quantitative Data Graphs"
+                    "orgReferenceId":"d66640ca-8fad-4cc4-b9a7-37fa151cc010",
+                    "orgReferenceTitle":"2.2 Quantitative Data Graphs",
+                    "orgReferenceType": "onlineReading",
+                    "url": "https://lti.education-qa.wiley.com/wpng/api/v1/lti/vitalsource/products/9781119308843/items/epubcfi/6/20!/4/2/8"
                 }
             ]
         },
@@ -230,8 +269,10 @@
                     "weight": 5.0,
                     "derivedFrom": "b7559724-c2d1-4af1-b21c-ebdd9f74b6fc",
                     "title": "#Sprint38 #DifferentFields #AltAns Chapter 3, Section 4, Exercise 104",
-                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
-                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
                 },
                 {
                     "numAttempts": 0,
@@ -239,8 +280,10 @@
                     "weight": 10.0,
                     "derivedFrom": "65faf208-5ae1-45d8-b25e-f1ce28e960b9",
                     "title": "100 with 3 types of tolerance",
-                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
-                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
                 },
                 {
                     "numAttempts": 0,
@@ -248,8 +291,10 @@
                     "weight": 10.0,
                     "derivedFrom": "6158d7e0-cd00-4912-97ad-5654743b8d11",
                     "title": "200 TE-N with 4 types of tolerance",
-                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
-                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
                 },
                 {
                     "numAttempts": 0,
@@ -257,8 +302,10 @@
                     "weight": 2.0,
                     "derivedFrom": "9df1353c-29c9-4afd-bf92-ce7703a0a388",
                     "title": "3172 Problem 5-3",
-                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
-                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
                 },
                 {
                     "numAttempts": 0,
@@ -266,8 +313,10 @@
                     "weight": 2.0,
                     "derivedFrom": "7102741d-9199-4277-8552-b1b94c3962f2",
                     "title": "Chapter 06, Testbank Question 17",
-                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
-                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
                 },
                 {
                     "numAttempts": 0,
@@ -275,8 +324,10 @@
                     "weight": 2.0,
                     "derivedFrom": "b49d64c4-0a81-4449-b80f-87389a5bb550",
                     "title": "Chapter 06, Testbank Question 18",
-                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
-                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
                 },
                 {
                     "numAttempts": 0,
@@ -284,8 +335,10 @@
                     "weight": 2.0,
                     "derivedFrom": "ccaf435c-6247-4721-837c-09853ca4be1d",
                     "title": "Chapter 06, Testbank Question 27",
-                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
-                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
                 },
                 {
                     "numAttempts": 0,
@@ -293,8 +346,10 @@
                     "weight": 2.0,
                     "derivedFrom": "8b346848-532b-4c7b-9337-e547e9c88c2c",
                     "title": "Linked to multiple sections within different chapters",
-                    "orgReferenceId":"30eb45a9-a14f-4d40-a729-79287fbb950a",
-                    "orgReferenceTitle":"Data Analytics Lesson 02: Challenges of Big Data"
+                    "orgReferenceId":"ea5309ef-3705-4368-a364-21ca914c433d",
+                    "orgReferenceTitle":"Data Analytics Lesson 02: Challenges of Big Data",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=ea5309ef-3705-4368-a364-21ca914c433d&icr=1"
                 },
                 {
                     "numAttempts": 0,
@@ -302,8 +357,10 @@
                     "weight": 10.0,
                     "derivedFrom": "2f900569-fd5d-42f7-9d58-9d2644c8dab9",
                     "title": "WileyPLUS Problem 2-06",
-                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
-                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
                 },
                 {
                     "numAttempts": 0,
@@ -311,8 +368,10 @@
                     "weight": 5.0,
                     "derivedFrom": "7575e940-cd8e-47b6-82eb-2ef3f29c7d3f",
                     "title": "MP Parts Re-authoring",
-                    "orgReferenceId":"62f3e61b-00f6-4b3b-ae4b-c7c0bede1f6c",
-                    "orgReferenceTitle":"Data Analytics and Decision-Making Module"
+                    "orgReferenceId":"4dabe7ca-465a-41ea-b333-46be40899b8c",
+                    "orgReferenceTitle":"Data Analytics Introduction",
+                    "orgReferenceType": "article",
+                    "url": "https://education-qa.wiley.com/ng-resource-player/index.html#/?resourceId=4dabe7ca-465a-41ea-b333-46be40899b8c&icr=1"
                 }
             ]
         }

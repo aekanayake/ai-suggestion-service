@@ -15,5 +15,7 @@ public class Recommendation {
     private String duration;
     private Integer confidence;
     private String orgReferenceId;
+    private String orgReferenceType;
+    private String url;
 }
 

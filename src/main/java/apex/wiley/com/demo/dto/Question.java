@@ -19,6 +19,8 @@ public class Question {
     private String lastSubmitDate;
     private String orgReferenceId;
     private String orgReferenceTitle;
+    private String orgReferenceType;
+    private String url;
     private String derivedFrom;
     private Double weight;
     private String mqId;

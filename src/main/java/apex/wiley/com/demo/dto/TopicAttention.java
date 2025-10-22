@@ -17,6 +17,8 @@ public class TopicAttention {
     private String title;
     
     private String orgReferenceId;
+    private String orgReferenceType;
+    private String url;
     private Integer overallProgress;
 }
 

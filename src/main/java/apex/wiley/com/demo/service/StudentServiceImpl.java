@@ -207,9 +207,9 @@ public class StudentServiceImpl implements StudentService {
             "4) Recommend realistic weekly study hours (typically 5-15 hours per week). " +
             "\n\nProvide: " +
             "- studyTime: Recommended study hours PER WEEK (not total), " +
-            "- topicNeedToAttention: Top 3-5 topics where student struggles (incorrect answers or multiple attempts), " +
+            "- topicNeedToAttention: Top 3-5 topics where student struggles. Include orgReferenceTitle, orgReferenceId, orgReferenceType, url, and overallProgress, " +
             "- recentQuestions: Only the 3 MOST RECENT question attempts with their status (correct/incorrect/not_attempted), sorted by most recent first, " +
-            "- recommendations: Top 3-5 personalized study recommendations prioritized by urgency and due dates.";
+            "- recommendations: Top 3-5 personalized study recommendations prioritized by urgency. Include orgReferenceTitle, orgReferenceId, orgReferenceType, url, priority, duration, and confidence.";
 
         payload.put("instruction", instruction);
 
