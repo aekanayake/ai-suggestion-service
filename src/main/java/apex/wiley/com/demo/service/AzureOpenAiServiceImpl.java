@@ -25,6 +25,9 @@ public class AzureOpenAiServiceImpl implements AzureOpenAiService{
     @Value("${azure.openai.revise.assistant.id}")
     private String studyPlanReviseAssistantId;
 
+    @Value("${azure.openai.student.analytics.assistant.id}")
+    private String studentAnalyticsAssistantId;
+
     private AssistantsClient client;
 
     @PostConstruct
@@ -119,6 +122,54 @@ public class AzureOpenAiServiceImpl implements AzureOpenAiService{
         return thread.getId();
     }
 
+    @Override
+    public String analyzeStudentPerformance(String studentDataPayload) throws InterruptedException {
+        System.out.println("Analyzing student performance with payload: " + studentDataPayload);
 
+        // Create a thread for this conversation
+        AssistantThread thread = client.createThread(new AssistantThreadCreationOptions());
+
+        // Send the student data to the assistant
+        ThreadMessage threadMessage = client.createMessage(
+            thread.getId(),
+            new ThreadMessageOptions(MessageRole.USER, studentDataPayload)
+        );
+
+        System.out.println("Thread created with ID: " + thread.getId());
+        System.out.println("Running the thread with Assistant ID: " + studentAnalyticsAssistantId);
+
+        // Run the assistant
+        ThreadRun run = client.createRun(thread.getId(), new CreateRunOptions(studentAnalyticsAssistantId));
+
+        // Wait for completion
+        do {
+            run = client.getRun(run.getThreadId(), run.getId());
+            System.out.println("Run status: " + run.getStatus());
+            Thread.sleep(1000);
+        } while (run.getStatus() == RunStatus.QUEUED || run.getStatus() == RunStatus.IN_PROGRESS);
+
+        // Extract the response
+        PageableList<ThreadMessage> messages = client.listMessages(run.getThreadId());
+        List<ThreadMessage> data = messages.getData();
+
+        for (ThreadMessage dataMessage : data) {
+            MessageRole role = dataMessage.getRole();
+            if ("assistant".equals(role.toString())) {
+                for (MessageContent messageContent : dataMessage.getContent()) {
+                    MessageTextContent messageTextContent = (MessageTextContent) messageContent;
+                    String response = messageTextContent.getText().getValue();
+
+                    // Clean up JSON formatting
+                    response = response.replaceFirst("^```json\\s*", "")
+                                     .replaceFirst("```\\s*$", "");
+
+                    System.out.println("AI Response: " + response);
+                    return response;
+                }
+            }
+        }
+
+        return null;
+    }
 
 }

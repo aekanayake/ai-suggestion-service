@@ -14,5 +14,6 @@ public class Recommendation {
     private String priority;
     private String duration;
     private Integer confidence;
+    private String orgReferenceId;
 }
 

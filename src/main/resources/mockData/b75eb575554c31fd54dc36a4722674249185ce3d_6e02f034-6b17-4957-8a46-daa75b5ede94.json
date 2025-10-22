@@ -1,0 +1,229 @@
+{
+    "studentType": "active",
+    "assignments": [
+        {
+            "id": "8d6c71cfc619f0cd54f47fb2abafa4d87388561263c1a4530aeffa13b196cb58",
+            "title": "Assessment 1",
+            "dueDate": "2025-10-29T18:29:00Z",
+            "status": "complete",
+            "questionsCompleted": 10,
+            "totalQuestions": 10,
+            "progress": 100,
+            "grade": 70,
+            "Question": [
+                {
+                    "questionId": "f9c1e3db-5086-49f2-8def-d76836679057",
+                    "title": "Decision Dilemma Question 1.01",
+                    "numAttempts": 1,
+                    "maxAttempts": 3,
+                    "score": 2.0,
+                    "orgReferenceId": "16c75de2-221b-4cd0-a901-94a2a2b81668",
+                    "orgReferenceTitle": "1.1 Basic Statistical Concepts"
+                },
+                {
+                    "questionId": "bf6fbaac-8090-4036-9704-50f506442aa1",
+                    "title": "Decision Dilemma Solved Question 1.01",
+                    "numAttempts": 3,
+                    "maxAttempts": 3,
+                    "score": 0,
+                    "lastSubmitDate": "2025-10-21T06:02:51.375Z",
+                    "orgReferenceId": "0207c41d-fd71-4c08-9508-1b3d29116af8",
+                    "orgReferenceTitle": "1.3 A Look at IFRS"
+                },
+                {
+                    "questionId": "0bfe453d-c3cc-4c21-8fcc-e4016aa04ab4",
+                    "title": "Decision Dilemma Question 2.01",
+                    "numAttempts": 3,
+                    "maxAttempts": 3,
+                    "score": 0,
+                    "lastSubmitDate": "2025-10-21T06:07:25.723Z",
+                    "orgReferenceId": "01c29da0-8c38-417d-a27e-7a48be10c698",
+                    "orgReferenceTitle": "2.1 Frequency Distributions"
+                },
+                {
+                    "questionId": "f18dfda9-0430-4a3c-825f-384f5067803c",
+                    "title": "End of Section Problem 2.17",
+                    "numAttempts": 1,
+                    "maxAttempts": 3,
+                    "score": 2.0,
+                    "lastSubmitDate": "2025-10-21T06:03:19.095Z",
+                    "orgReferenceId": "fd925acd-3bf6-416a-979d-3e587edf5a80",
+                    "orgReferenceTitle": "2.3 Qualitative Data Graphs"
+                },
+                {
+                    "questionId": "94c61c00-a331-4212-96ae-aa8ac0b22e1f",
+                    "title": "Practice Question 2.40",
+                    "numAttempts": 3,
+                    "maxAttempts": 3,
+                    "score": 2.0,
+                    "lastSubmitDate": "2025-10-21T06:07:44.400Z",
+                    "orgReferenceId": "fd925acd-3bf6-416a-979d-3e587edf5a80",
+                    "orgReferenceTitle": "2.3 Qualitative Data Graphs"
+                },
+                {
+                    "questionId": "97765c07-8b2a-4a38-a674-a8d9a62b8306",
+                    "title": "Practice Question 2.42",
+                    "numAttempts": 3,
+                    "maxAttempts": 3,
+                    "score": 2.0,
+                    "lastSubmitDate": "2025-10-21T06:06:30.992Z",
+                    "orgReferenceId": "fd925acd-3bf6-416a-979d-3e587edf5a80",
+                    "orgReferenceTitle": "2.3 Qualitative Data Graphs"
+                },
+                {
+                    "questionId": "d0b2a155-467f-42dc-8a6a-eac8587246ee",
+                    "title": "Testbank Question 1.02",
+                    "numAttempts": 1,
+                    "maxAttempts": 3,
+                    "score": 2.0,
+                    "lastSubmitDate": "2025-10-21T06:06:37.823Z",
+                    "orgReferenceId": "16c75de2-221b-4cd0-a901-94a2a2b81668",
+                    "orgReferenceTitle": "1.1 Basic Statistical Concepts"
+                },
+                {
+                    "questionId": "a5f64876-894e-4827-a67c-3d7318fece99",
+                    "title": "Testbank Question 1.04",
+                    "numAttempts": 1,
+                    "maxAttempts": 3,
+                    "score": 2.0,
+                    "lastSubmitDate": "2025-10-21T06:06:44.347Z",
+                    "orgReferenceId": "16c75de2-221b-4cd0-a901-94a2a2b81668",
+                    "orgReferenceTitle": "1.1 Basic Statistical Concepts"
+                },
+                {
+                    "questionId": "cd0adf58-3839-414f-8b5a-4125c6d91ae2",
+                    "title": "Testbank Question 1.07",
+                    "numAttempts": 1,
+                    "maxAttempts": 3,
+                    "score": 2.0,
+                    "lastSubmitDate": "2025-10-21T06:06:50.963Z",
+                    "orgReferenceId": "16c75de2-221b-4cd0-a901-94a2a2b81668",
+                    "orgReferenceTitle": "1.1 Basic Statistical Concepts"
+                },
+                {
+                    "questionId": "b1261690-452f-42d0-8da8-665dfeaea53c",
+                    "title": "Testbank Question 1.10",
+                    "numAttempts": 1,
+                    "maxAttempts": 3,
+                    "score": 2.0,
+                    "lastSubmitDate": "2025-10-21T06:06:57.631Z",
+                    "orgReferenceId": "16c75de2-221b-4cd0-a901-94a2a2b81668",
+                    "orgReferenceTitle": "1.1 Basic Statistical Concepts"
+                }
+            ]
+        },
+        {
+            "id": "a5d2c5822df14bd5a2fd16e3acd09f2ddd763ac383feae9a0f3457cbcc2f7cc8",
+            "title": "Assessment 2",
+            "dueDate": "2025-11-03T18:29:00Z",
+            "status": "in_progress",
+            "questionsCompleted": 4,
+            "totalQuestions": 10,
+            "progress": 60,
+            "grade": 10,
+            "Question": [
+                {
+                    "questionId": "e2470a0c-69a5-42c5-82da-b9570b0c3539",
+                    "title": "1.3d Practice the Skill - SkillBuilder 1.2 (Molecular Drawing)",
+                    "numAttempts": 2,
+                    "maxAttempts": 3,
+                    "score": 0,
+                    "lastSubmitDate": "2025-10-21T06:12:35.317Z",
+                    "orgReferenceId": "31929865-edc1-42f8-a12c-4e3ee829c6d4",
+                    "orgReferenceTitle":"What's Inside"
+
+                },
+                {
+                    "questionId": "c536954f-6a97-4053-b67f-c85828c6c360",
+                    "title": "02.03-PR006 (Video Solution)",
+                    "numAttempts": 1,
+                    "maxAttempts": 3,
+                    "score": 0,
+                    "lastSubmitDate": "2025-10-21T06:13:19.096Z",
+                    "orgReferenceId": "31929865-edc1-42f8-a12c-4e3ee829c6d4",
+                    "orgReferenceTitle":"What's Inside"
+                },
+                {
+                    "questionId": "0e20f685-059b-44d2-aa36-d83733d3985f",
+                    "title": "02.07-PR016 (Excel Lesson)",
+                    "numAttempts": 1,
+                    "maxAttempts": 3,
+                    "score": 0,
+                    "lastSubmitDate": "2025-10-21T06:13:34.078Z",
+                    "orgReferenceId": "31929865-edc1-42f8-a12c-4e3ee829c6d4",
+                    "orgReferenceTitle":"What's Inside"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 3,
+                    "title": "2D Sketcher Question with radical",
+                    "orgReferenceId": "cd79ad5e-e71f-4ccd-97af-db03a6eb67f7",
+                    "orgReferenceTitle":"How to Succeed in This Course"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 3,
+                    "mqId": "d2ba6124-5f96-4902-98d3-c6613210335b",
+                    "title": "2MD",
+                    "orgReferenceId": "31929865-edc1-42f8-a12c-4e3ee829c6d4",
+                    "orgReferenceTitle":"What's Inside"
+                },
+                {
+                    "questionId": "73da584d-6aec-4078-9f3d-0755c4739eaf",
+                    "title": "Linked to multiple sections within different chapters",
+                    "numAttempts": 2,
+                    "maxAttempts": 3,
+                    "score": 1.0,
+                    "lastSubmitDate": "2025-10-21T06:13:56.516Z",
+                    "orgReferenceId": "2c892d9c-de36-42f1-ac96-3ee0ffb99648",
+                    "orgReferenceTitle":"Ch 1: CPA Exam Video Lessons"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 3,
+                    "derivedFrom": "e255d4b7-910d-4cfc-b4c3-fae498e845b9",
+                    "title": "End of Section Problem 2.5 (Essay)",
+                    "orgReferenceId": "01c29da0-8c38-417d-a27e-7a48be10c698",
+                    "orgReferenceTitle": "2.1 Frequency Distributions"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 3,
+                    "derivedFrom": "081b103d-97df-4480-a895-43ab5af06db8",
+                    "title": "End of Section Problem 2.6 (Essay)",
+                    "orgReferenceId": "13ed65bf-f986-420d-85cf-3eb6c92b9a77",
+                    "orgReferenceTitle":"2.2 Quantitative Data Graphs"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 3,
+                    "weight": 1.0,
+                    "derivedFrom": "eb6ef0fb-b5ff-4afe-ad69-177de74fc4e9",
+                    "title": "End of Section Problem 2.7",
+                    "orgReferenceId": "13ed65bf-f986-420d-85cf-3eb6c92b9a77",
+                    "orgReferenceTitle":"2.2 Quantitative Data Graphs"
+                },
+                {
+                    "numAttempts": 0,
+                    "maxAttempts": 3,
+                    "weight": 1.0,
+                    "derivedFrom": "f1047554-6351-4d2b-a884-47e888783eee",
+                    "title": "End of Section Problem 2.8",
+                    "orgReferenceId":"13ed65bf-f986-420d-85cf-3eb6c92b9a77",
+                    "orgReferenceTitle":"2.2 Quantitative Data Graphs"
+                }
+            ]
+        },
+        {
+            "id": "64fe1338d0040d39aebe10c283b7cada8397c3bdd6015d1c885d965aad930cf8",
+            "title": "Exam",
+            "dueDate": "2025-11-07T08:30:00Z",
+            "status": "not_started",
+            "questionsCompleted": 0,
+            "totalQuestions": 10,
+            "progress": 0,
+            "grade": 0,
+            "Question": []
+        }
+    ]
+}
