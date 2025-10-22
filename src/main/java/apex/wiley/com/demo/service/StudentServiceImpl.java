@@ -6,6 +6,8 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -176,6 +178,7 @@ public class StudentServiceImpl implements StudentService {
         
         // Build a structured payload for AI
         Map<String, Object> payload = new HashMap<>();
+        payload.put("currentDateTime", LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME));
         payload.put("studentType", mockData.getStudentType());
         payload.put("totalAssignments", mockData.getAssignments() != null ? mockData.getAssignments().size() : 0);
         payload.put("assignments", mockData.getAssignments());
@@ -195,11 +198,18 @@ public class StudentServiceImpl implements StudentService {
         payload.put("questions", allQuestions);
         
         // Add instruction for the AI
-        String instruction = "Analyze this student data and provide analytics including: " +
-            "1) Estimated study time based on questions completed and attempts, " +
-            "2) Topics that need attention based on incorrect answers or multiple attempts, " +
-            "3) Recent questions with their status, " +
-            "4) Personalized recommendations for improvement.";
+        String instruction = "Analyze this student data and provide analytics. " +
+            "IMPORTANT: Study time should be RECOMMENDED HOURS PER WEEK based on upcoming assignment due dates and student performance. " +
+            "Consider: " +
+            "1) Upcoming assignment due dates to determine urgency and weekly time needed, " +
+            "2) Number of incomplete questions and assignments, " +
+            "3) Student's current performance (incorrect answers, multiple attempts), " +
+            "4) Recommend realistic weekly study hours (typically 5-15 hours per week). " +
+            "\n\nProvide: " +
+            "- studyTime: Recommended study hours PER WEEK (not total), " +
+            "- topicNeedToAttention: Top 3-5 topics where student struggles (incorrect answers or multiple attempts), " +
+            "- recentQuestions: Only the 3 MOST RECENT question attempts with their status (correct/incorrect/not_attempted), sorted by most recent first, " +
+            "- recommendations: Top 3-5 personalized study recommendations prioritized by urgency and due dates.";
         
         payload.put("instruction", instruction);
         
