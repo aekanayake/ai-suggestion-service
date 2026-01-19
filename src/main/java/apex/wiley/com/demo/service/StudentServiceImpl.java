@@ -16,20 +16,26 @@ public class StudentServiceImpl implements StudentService {
 
     private final AzureOpenAiService azureOpenAiService;
     private final ObjectMapper objectMapper;
+    private final JwtTokenService jwtTokenService;
 
-    public StudentServiceImpl(AzureOpenAiService azureOpenAiService, ObjectMapper objectMapper) {
+    public StudentServiceImpl(AzureOpenAiService azureOpenAiService, ObjectMapper objectMapper, JwtTokenService jwtTokenService) {
         this.azureOpenAiService = azureOpenAiService;
         this.objectMapper = objectMapper;
+        this.jwtTokenService = jwtTokenService;
     }
 
     @Override
-    public StudentData getStudentAnalytics(String contextId, String ltiUserId) {
-        // Validate required parameters
+    public StudentData getStudentAnalytics() {
+        // Extract claims from JWT token via JwtTokenService
+        String contextId = jwtTokenService.getContextId();
+        String ltiUserId = jwtTokenService.getLtiUserId();
+
+        // Validate required claims
         if (contextId == null || contextId.isBlank()) {
-            throw new IllegalArgumentException("contextId is required and cannot be null or blank");
+            throw new IllegalArgumentException("lmscontextid claim is required and cannot be null or blank");
         }
         if (ltiUserId == null || ltiUserId.isBlank()) {
-            throw new IllegalArgumentException("ltiUserId is required and cannot be null or blank");
+            throw new IllegalArgumentException("lmsuserid claim is required and cannot be null or blank");
         }
 
         // Try to load mock data from JSON file first
@@ -246,5 +252,6 @@ public class StudentServiceImpl implements StudentService {
                 .build();
         }
     }
+
 }
 
