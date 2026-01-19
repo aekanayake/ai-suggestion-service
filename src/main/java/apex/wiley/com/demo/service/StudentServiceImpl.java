@@ -41,7 +41,7 @@ public class StudentServiceImpl implements StudentService {
         // Try to load mock data from JSON file first
         String fileName = contextId + "_" + ltiUserId + ".json";
         try {
-            MockStudentData mockData = loadMockDataFromFile(fileName);
+            StudentDataDto mockData = loadMockDataFromFile(fileName);
             if (mockData != null) {
                 return convertMockDataToStudentData(mockData);
             }
@@ -52,18 +52,18 @@ public class StudentServiceImpl implements StudentService {
         return null;
     }
 
-    private MockStudentData loadMockDataFromFile(String fileName) throws IOException {
+    private StudentDataDto loadMockDataFromFile(String fileName) throws IOException {
         ClassPathResource resource = new ClassPathResource("mockData/" + fileName);
 
         if (!resource.exists()) {
             return null;
         }
 
-        MockStudentData mockData = objectMapper.readValue(resource.getInputStream(), MockStudentData.class);
+        StudentDataDto mockData = objectMapper.readValue(resource.getInputStream(), StudentDataDto.class);
         return mockData;
     }
 
-    private StudentData convertMockDataToStudentData(MockStudentData mockData) {
+    private StudentData convertMockDataToStudentData(StudentDataDto mockData) {
         StudentAnalyticsAiResponse aiAnalytics = null;
 
         try {
@@ -112,27 +112,27 @@ public class StudentServiceImpl implements StudentService {
             .build();
     }
 
-    private Integer calculateCourseProgress(List<MockAssignment> assignments) {
+    private Integer calculateCourseProgress(List<AssignmentDto> assignments) {
         if (assignments == null || assignments.isEmpty()) {
             return 0;
         }
 
         // Calculate overall course progress based on assignment progress
         double totalProgress = assignments.stream()
-            .mapToDouble(MockAssignment::getProgress)
+            .mapToDouble(AssignmentDto::getProgress)
             .average()
             .orElse(0.0);
 
         return (int) Math.round(totalProgress);
     }
 
-    private Integer calculateAverageGrade(List<MockAssignment> assignments) {
+    private Integer calculateAverageGrade(List<AssignmentDto> assignments) {
         if (assignments == null || assignments.isEmpty()) {
             return 0;
         }
 
         // Calculate average grade from complete and in_progress assignments only (exclude not_started)
-        List<MockAssignment> gradedAssignments = assignments.stream()
+        List<AssignmentDto> gradedAssignments = assignments.stream()
             .filter(assignment -> !assignment.getStatus().equals("not_started") 
                 && assignment.getGrade() != null 
                 && assignment.getGrade() > 0)
@@ -143,14 +143,14 @@ public class StudentServiceImpl implements StudentService {
         }
 
         double averageGrade = gradedAssignments.stream()
-            .mapToDouble(MockAssignment::getGrade)
+            .mapToDouble(AssignmentDto::getGrade)
             .average()
             .orElse(0.0);
 
         return (int) Math.round(averageGrade);
     }
 
-    private List<Assignment> convertAssignments(List<MockAssignment> mockAssignments) {
+    private List<Assignment> convertAssignments(List<AssignmentDto> mockAssignments) {
         if (mockAssignments == null) {
             return Collections.emptyList();
         }
@@ -160,7 +160,7 @@ public class StudentServiceImpl implements StudentService {
             .collect(Collectors.toList());
     }
 
-    private Assignment convertMockAssignment(MockAssignment mockAssignment) {
+    private Assignment convertMockAssignment(AssignmentDto mockAssignment) {
         return Assignment.builder()
             .id(mockAssignment.getId() != null ? mockAssignment.getId().hashCode() : 0)
             .title(mockAssignment.getTitle())
@@ -173,12 +173,12 @@ public class StudentServiceImpl implements StudentService {
             .build();
     }
 
-    private String buildStudentAnalysisPayload(MockStudentData mockData) throws Exception {
+    private String buildStudentAnalysisPayload(StudentDataDto mockData) throws Exception {
         // Extract all questions from all assignments
         List<Question> allQuestions = new ArrayList<>();
 
         if (mockData.getAssignments() != null) {
-            for (MockAssignment assignment : mockData.getAssignments()) {
+            for (AssignmentDto assignment : mockData.getAssignments()) {
                 if (assignment.getQuestions() != null) {
                     allQuestions.addAll(assignment.getQuestions());
                 }
