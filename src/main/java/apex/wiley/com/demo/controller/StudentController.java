@@ -6,7 +6,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -17,11 +16,8 @@ public class StudentController {
     private final StudentService studentService;
 
     @GetMapping("/analytics")
-    public ResponseEntity<StudentData> getStudentAnalytics(
-            @RequestParam String contextId,
-            @RequestParam String ltiUserId) {
-        
-        StudentData studentData = studentService.getStudentAnalytics(contextId, ltiUserId);
+    public ResponseEntity<StudentData> getStudentAnalytics() {
+        StudentData studentData = studentService.getStudentAnalytics();
         return ResponseEntity.ok(studentData);
     }
 }

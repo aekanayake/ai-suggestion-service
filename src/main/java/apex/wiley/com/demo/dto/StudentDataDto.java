@@ -11,7 +11,7 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class MockStudentData {
+public class StudentDataDto {
     private String studentType;
-    private List<MockAssignment> assignments;
+    private List<AssignmentDto> assignments;
 }

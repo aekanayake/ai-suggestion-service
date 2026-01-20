@@ -12,7 +12,7 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class MockAssignment {
+public class AssignmentDto {
     private String id;
     private String title;
     private String dueDate;
@@ -22,7 +22,7 @@ public class MockAssignment {
     private Integer totalQuestions;
     private Integer progress;
     private Integer grade;
-    
+
     @JsonProperty("Question")
     private List<Question> questions;
 }
